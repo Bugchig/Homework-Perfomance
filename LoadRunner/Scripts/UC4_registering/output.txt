@@ -1,0 +1,473 @@
+Virtual User Script started at: 16.05.2024 13:32:19
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\User\Documents\VuGen\Scripts\UC2_registering\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0,1110 Wasted Time: 0,0122).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>jimhawkins</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1083 body bytes, 384 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.1716 Wasted Time: 0.0052).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.7098 Wasted Time: 0.1173).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0.1273 Wasted Time: 0.0140).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>longjohnsilver</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1087 body bytes, 395 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.1268 Wasted Time: 0.0102).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.6043 Wasted Time: 0.0423).
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0.1093 Wasted Time: 0.0127).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>captainsmudge</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1086 body bytes, 399 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.1423 Wasted Time: 0.0153).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.6316 Wasted Time: 0.0670).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0,1096 Wasted Time: 0,0136).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>blackdog</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1081 body bytes, 382 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0,1423 Wasted Time: 0,0212).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0,6011 Wasted Time: 0,0631).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0,1584 Wasted Time: 0,0177).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>billybones</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1083 body bytes, 390 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0,1410 Wasted Time: 0,0165).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0,6773 Wasted Time: 0,0697).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0.1254 Wasted Time: 0.0225).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>blindpew</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1081 body bytes, 396 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.2058 Wasted Time: 0.0321).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.7277 Wasted Time: 0.1083).
+Ending action Action.
+Ending iteration 6.
+Starting iteration 7.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0.1251 Wasted Time: 0.0232).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>benbowinnkeeper</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1088 body bytes, 400 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.1904 Wasted Time: 0.0357).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.7429 Wasted Time: 0.1207).
+Ending action Action.
+Ending iteration 7.
+Starting iteration 8.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1481 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0,1571 Wasted Time: 0,0243).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>squiretrelawney</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1088 body bytes, 404 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0,1577 Wasted Time: 0,0315).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0,6926 Wasted Time: 0,1140).
+Ending action Action.
+Ending iteration 8.
+Starting iteration 9.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0.1713 Wasted Time: 0.0378).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>drlivesey</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1082 body bytes, 391 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.1579 Wasted Time: 0.0281).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.7063 Wasted Time: 0.1259).
+Ending action Action.
+Ending iteration 9.
+Starting iteration 10.
+Starting action Action.
+Action.c(3): Notify: Transaction "registering" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(30): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(34): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(34): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
+Action.c(34): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(49): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(49): web_custom_request("nav.pl") was successful, 1489 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(59): Notify: Transaction "Sign_up" started.
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(66): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(76): Notify: Transaction "Sign_up" ended with a "Pass" status (Duration: 0.1410 Wasted Time: 0.0325).
+Action.c(78): Notify: Transaction "customer_Profile" started.
+Action.c(80): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(84): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(84): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(88): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(88): Registered web_reg_find successful for "Text=Thank you, <b>captainflint</b>, for registering" (count=1)  	[MsgId: MMSG-26364]
+Action.c(88): web_custom_request("login.pl_2") was successful, 1085 body bytes, 395 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): Notify: Transaction "customer_Profile" ended with a "Pass" status (Duration: 0.1736 Wasted Time: 0.0325).
+Action.c(100): Notify: Transaction "registering" ended with a "Pass" status (Duration: 0.7089 Wasted Time: 0.1480).
+Ending action Action.
+Ending iteration 10.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

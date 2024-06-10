@@ -1,0 +1,278 @@
+[API Trapper      (290c:1dd0)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (14c0:38a0)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      ( e9c: 4b0)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer ( e9c:3b24)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( e9c:3b24)] Load Network Traffic Analyzers:
+[Network Analyzer ( e9c:3b24)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer ( e9c:3b24)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer ( e9c:3b24)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer ( e9c:3b24)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer ( e9c:3b24)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer ( e9c:3b24)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer ( e9c:3b24)]     Analyzer Module: local_server (value=)
+[Network Analyzer ( e9c:3b24)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( e9c:1890)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[API Trapper      (2714: 84c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 64.233.161.188:5228   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 209.85.233.84:443   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer ( e9c:1890)]   (Sid:  1) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 209.85.233.84:443   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.211.227:443   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:27bc)]   (Sid:  2) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.211.227:443   (Service=)  (Sid=  6)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 209.85.233.84:443   (Service=)  (Sid=  7)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:22d0)]   (Sid:  3) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:22d0)] SSLAccept(ssl_id = 2737519853136 = 0000027D60E5FE50) Failed, ctx = 0000027D60E4D700, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    ( e9c:22d0)]   (Sid:  3) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid:  3) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.209.206:443   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:421c)]   (Sid:  4) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:421c)] SSLAccept(ssl_id = 2737519877344 = 0000027D60E65CE0) Failed, ctx = 0000027D60E4D700, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    ( e9c:421c)]   (Sid:  4) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid:  4) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid=  9)  PROXIED!
+[Net An. Error    ( e9c:27bc)] SSLAccept(ssl_id = 2737519538320 = 0000027D60E13090) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:27bc)]   (Sid:  2) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:18e4)]   (Sid:  5) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Net An. Error    ( e9c:18e4)] SSLAccept(ssl_id = 2737519888160 = 0000027D60E68720) Failed, ctx = 0000027D60E664F0, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    ( e9c:18e4)]   (Sid:  5) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid:  5) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.170:443   (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:43a8)]   (Sid:  6) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.209.170:443   (Service=)  (Sid= 11)  PROXIED!
+[Network Analyzer ( e9c:43a8)]   (Sid:  6) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Web Request      ( e9c:1890)] "GET /chrome-variations/seed?osname=win&channel=stable&milestone=124"   
+[Network Analyzer ( e9c:1890)]   (Sid:  6) Client -> Server @ : 469 bytes (SSL)(Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid:  6) Server -> Client : 206 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:12cc)]   (Sid:  7) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:2a9c)]   (Sid:  8) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:3450)]   (Sid:  9) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:4010)]   (Sid: 10) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:3020)]   (Sid: 11) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:1890)]   (Sid:  2) Connection Terminated (by Client)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:2a9c)] SSLAccept(ssl_id = 2737520214032 = 0000027D60EB8010) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:3450)] SSLAccept(ssl_id = 2737520318912 = 0000027D60ED19C0) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:2a9c)]   (Sid:  8) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    ( e9c:3020)] SSLAccept(ssl_id = 2737520555664 = 0000027D60F0B690) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:3450)]   (Sid:  9) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    ( e9c:3020)]   (Sid: 11) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:12cc)]   (Sid:  7) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Network Analyzer ( e9c:4010)]   (Sid: 10) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Client -> Server @ : 3264 bytes (SSL)(Service=HTTP)
+[Web Request      ( e9c:1890)] "POST /oauth2/v4/token"   
+[Network Analyzer ( e9c:1890)]   (Sid: 10) Client -> Server @ : 718 bytes (SSL)(Service=HTTP)
+[Web Request      ( e9c:1890)] "POST /ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard"   
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Client -> Server @ : 1 bytes (SSL)(Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 10) Server -> Client : 985 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 10) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Server -> Client : 2949 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Server -> Client : 232 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Server -> Client : 15 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid:  8) Connection Terminated (by Client)
+[Network Analyzer ( e9c:1890)]   (Sid:  9) Connection Terminated (by Client)
+[Network Analyzer ( e9c:1890)]   (Sid: 11) Connection Terminated (by Client)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 12)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Web Request      ( e9c:1890)] "GET /cgi-bin/welcome.pl?signOff=true"   
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Client -> Server @ : 736 bytes (Service=HTTP)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 13)  PROXIED!
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      ( e9c:1890)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Client -> Server @ : 777 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Server -> Client : 1746 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      ( e9c:1890)] "GET /favicon.ico"   
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Client -> Server @ : 642 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Server -> Client : 424 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 12) Connection Terminated (by Server)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 64.233.161.188:443   (Service=)  (Sid= 14)  PROXIED!
+[Network Analyzer ( e9c:14cc)]   (Sid: 14) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:14cc)] SSLAccept(ssl_id = 2737519472544 = 0000027D60E02FA0) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:14cc)]   (Sid: 14) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 14) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid= 15)  PROXIED!
+[Network Analyzer ( e9c:3de0)]   (Sid: 15) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:3de0)] SSLAccept(ssl_id = 2737519287568 = 0000027D60DD5D10) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:3de0)]   (Sid: 15) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:80   (Service=)  (Sid= 16)  PROXIED!
+[Web Request      ( e9c:1890)] "POST /service/update2/json?cup2key=14:OAlomLu2FbMxOpGV6j-WGKQrjRW02IakVEPvtFVDbcw&cup2hreq=fcb2e32fb09b6e518e440b61507433641a83b98bc46d207e984abf109e8e874a"
+[Network Analyzer ( e9c:1890)]   (Sid: 16) Client -> Server @ : 1259 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 16) Client -> Server @ : 8675 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 16) Server -> Client : 3496 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 15) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid= 17)  PROXIED!
+[Network Analyzer ( e9c:1890)]   (Sid: 16) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid= 18)  PROXIED!
+[Network Analyzer ( e9c:1890)]   (Sid: 13) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3864)]   (Sid: 17) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:3864)] SSLAccept(ssl_id = 2737520088368 = 0000027D60E99530) Failed, ctx = 0000027D60E0EC70, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    ( e9c:3864)]   (Sid: 17) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 17) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3ce8)]   (Sid: 18) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[User action                 ] StartTransactionEvent Sign_up [Net An. Error    ( e9c:3ce8)] SSLAccept(ssl_id = 2737519287568 = 0000027D60DD5D10) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:3ce8)]   (Sid: 18) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid:  6) Connection Terminated (by Client)
+[Network Analyzer ( e9c:1890)]   (Sid:  7) Connection Terminated (by Client)
+[Network Analyzer ( e9c:1890)]   (Sid: 10) Connection Terminated (by Client)
+[Network Analyzer ( e9c:1890)]   (Sid: 18) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:80   (Service=)  (Sid= 19)  PROXIED!
+[Web Request      ( e9c:1890)] "POST /service/update2/json"   
+[Network Analyzer ( e9c:1890)]   (Sid: 19) Client -> Server @ : 1822 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 19) Server -> Client : 822 bytes  (Service=HTTP)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( e9c:1890)]   (Sid: 19) Connection Terminated (by Client)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid= 20)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 21)  PROXIED!
+[Network Analyzer ( e9c:1aac)]   (Sid: 20) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:1aac)] SSLAccept(ssl_id = 2737519866192 = 0000027D60E63150) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:1aac)]   (Sid: 20) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Web Request      ( e9c:1890)] "GET /cgi-bin/login.pl?username=&password=&getInfo=true"   
+[Network Analyzer ( e9c:1890)]   (Sid: 21) Client -> Server @ : 811 bytes (Service=HTTP)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:80   (Service=)  (Sid= 22)  PROXIED!
+[Web Request      ( e9c:1890)] "POST /service/update2/json"   
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Client -> Server @ : 1819 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 21) Server -> Client : 2665 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 21) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Server -> Client : 827 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 20) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid= 23)  PROXIED!
+[Network Analyzer ( e9c:1890)]   (Sid: 21) Connection Terminated (by Server)
+[Network Analyzer ( e9c:4308)]   (Sid: 23) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 64.233.161.188:5228   (Service=)  (Sid= 24)  PROXIED!
+[Net An. Error    ( e9c:4308)] SSLAccept(ssl_id = 2737519287568 = 0000027D60DD5D10) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:4308)]   (Sid: 23) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Client -> Server @ : 303 bytes (Service=HTTP)
+[Web Request      ( e9c:1890)] "POST /service/update2/json"   
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Client -> Server @ : 1506 bytes (Service=HTTP)
+[Network Analyzer ( e9c:407c)]   (Sid: 24) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:407c)] SSLAccept(ssl_id = 2737450191760 = 0000027D5CBF0B90) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:407c)]   (Sid: 24) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Server -> Client : 821 bytes  (Service=HTTP)
+[User action                 ] EndTransactionEvent Sign_up [Network Analyzer ( e9c:1890)]   (Sid: 23) Connection Terminated (by Client)
+[Network Analyzer ( e9c:1890)]   (Sid: 24) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.163:443   (Service=)  (Sid= 25)  PROXIED!
+[Network Analyzer ( e9c:3648)]   (Sid: 25) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:3648)] SSLAccept(ssl_id = 2737519866192 = 0000027D60E63150) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Web Request      ( e9c:1890)] "POST /service/update2/json"   
+[Net An. Error    ( e9c:3648)]   (Sid: 25) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Client -> Server @ : 1844 bytes (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 22) Server -> Client : 808 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 25) Connection Terminated (by Client)
+[User action                 ] StartTransactionEvent customer_Profile [API Trapper      (1ff4: e40)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( e9c:3b24)] Request Connection: Remote Server @ 0:0:0:0:0:0:0:1: - 1080  (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 26)  PROXIED!
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Web Request      ( e9c:1890)] "POST /cgi-bin/login.pl"   
+[Network Analyzer ( e9c:1890)]   (Sid: 26) Client -> Server @ : 1071 bytes (Service=HTTP)
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 27)  PROXIED!
+[Network Analyzer ( e9c:1890)]   (Sid: 26) Server -> Client : 1450 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 26) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.210.170:443   (Service=)  (Sid= 28)  PROXIED!
+[Network Analyzer ( e9c:32d8)]   (Sid: 28) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer ( e9c:32d8)]   (Sid: 28) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_128_GCM_SHA256)
+[Web Request      ( e9c:1890)] "POST /oauth2/v4/token"   
+[Network Analyzer ( e9c:1890)]   (Sid: 28) Client -> Server @ : 737 bytes (SSL)(Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 28) Server -> Client : 1059 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 28) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[Network Analyzer ( e9c:1890)]   (Sid: 26) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent customer_Profile [Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 64.233.161.188:443   (Service=)  (Sid= 29)  PROXIED!
+[Network Analyzer ( e9c:1fd0)]   (Sid: 29) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:1fd0)] SSLAccept(ssl_id = 2737450169824 = 0000027D5CBEB5E0) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:1fd0)]   (Sid: 29) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 29) Connection Terminated (by Client)
+[Network Analyzer ( e9c:3b24)] Address lookup for DESKTOP-2N15J4Q = 172.20.10.2
+[Network Analyzer ( e9c:3b24)] Request Connection: Remote Server @ 216.58.211.234:443   (Service=)  (Sid= 30)  PROXIED!
+[Network Analyzer ( e9c:1e8c)]   (Sid: 30) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Net An. Error    ( e9c:1e8c)] SSLAccept(ssl_id = 2737450191072 = 0000027D5CBF08E0) Failed, ctx = 0000027D60E0EC70, err = "error", err code = 1, err msg= "error:00000001:lib(0):func(0):reason(1)
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+" 
+[Net An. Error    ( e9c:1e8c)]   (Sid: 30) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer ( e9c:1890)]   (Sid: 30) Connection Terminated (by Client)

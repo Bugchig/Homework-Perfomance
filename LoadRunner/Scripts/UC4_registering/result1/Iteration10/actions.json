@@ -1,0 +1,54 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP37",
+                "stepName": "Custom Request: welcome.pl",
+                "infFile": "t1.inf",
+                "time": 1715855546190
+            },
+            {
+                "stepId": "STEP38",
+                "stepName": "Custom Request: nav.pl",
+                "infFile": "t2.inf",
+                "time": 1715855546301
+            },
+            {
+                "stepId": "STEP39",
+                "stepName": "Custom Request: login.pl",
+                "infFile": "t3.inf",
+                "time": 1715855546434
+            },
+            {
+                "stepId": "STEP40",
+                "stepName": "Custom Request: login.pl_2",
+                "infFile": "t4.inf",
+                "time": 1715855546631
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "Sign_up",
+                "rawStartTime": 1715855546308,
+                "rawEndTime": 1715855546449,
+                "thinkTime": 0.0,
+                "wastedTime": 0.03251194953918457
+            },
+            {
+                "transactionName": "customer_Profile",
+                "rawStartTime": 1715855546464,
+                "rawEndTime": 1715855546638,
+                "thinkTime": 0.0,
+                "wastedTime": 0.032546281814575198
+            },
+            {
+                "transactionName": "registering",
+                "rawStartTime": 1715855545944,
+                "rawEndTime": 1715855546653,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1480114459991455
+            }
+        ]
+    }
+]

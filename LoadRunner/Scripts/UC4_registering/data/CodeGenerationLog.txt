@@ -1,0 +1,932 @@
+****** Start Log Message ******
+Web Recorder version : 2021.0.0.430 
+Recording Mode: URL-Based script as custom requests only
+	Using concurrent groups
+Recording headers not in list:
+	accept
+	accept-charset
+	accept-encoding
+	accept-language
+	accept-ranges
+	age
+	allow
+	cache-control
+	content-base
+	content-disposition
+	content-encoding
+	content-language
+	content-location
+	content-md5
+	content-range
+	content-type
+	date
+	etag
+	expires
+	from
+	if-modified-since
+	if-match
+	if-none-match
+	if-range
+	if-unmodified-since
+	location
+	last-modified
+	max-forwards
+	pragma
+	public
+	range
+	retry-after
+	server
+	transfer-encoding
+	upgrade
+	user-agent
+	vary
+	via
+	warning
+	method
+	path
+	scheme
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+	application/json
+Reset context between actions
+Protocol Type: Multi-QTWeb
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 2021.0.0.430
+
+****** Analyze segments filter initialization ******
+[Traffic Filtering] Filtering clientservices.googleapis.com
+****** Request Header For Transaction With Id 32 ******
+GET /chrome-variations/seed?osname=win&channel=stable&milestone=124 HTTP/1.1
+Host: clientservices.googleapis.com
+Connection: keep-alive
+If-None-Match: SMChYyMDI0MDUxMy0xODAxMTYuMjg4MDAwEggIABADGHwgAA==#XBrWX8q8dOo=
+A-IM: x-bm,gzip
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+
+
+$$$$$$ Request Header For Transaction With Id 32 Ended $$$$$$
+
+****** Response Header For Transaction With Id 32 ******
+HTTP/1.1 304 Not Modified
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+Date: Tue, 14 May 2024 11:17:28 GMT
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+$$$$$$ Response Header For Transaction With Id 32 Ended $$$$$$
+
+[Traffic Filtering] Filtering www.googleapis.com
+****** Request Header For Transaction With Id 39 ******
+POST /oauth2/v4/token HTTP/1.1
+Host: www.googleapis.com
+Connection: keep-alive
+Content-Length: 279
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+$$$$$$ Request Header For Transaction With Id 39 Ended $$$$$$
+
+****** Request Body For Transaction With Id 39 ******
+client_id=77185425430.apps.googleusercontent.com&client_secret=OTJgUOQcT7lO7GsGZq2G4IlT&grant_type=refresh_token&refresh_token=1//03FWm1KK8WOIGCgYIARAAGAMSNwF-L9IraUn81Vef4T2C-PqnoknU4kZ5rE_thLi3iwLdmlJ54xxaa1gV-UhnjOu9zgdZV726t5Y&scope=https://www.googleapis.com/auth/chromesync
+$$$$$$ Request Body For Transaction With Id 39 Ended $$$$$$
+
+****** Response Header For Transaction With Id 39 ******
+HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Tue, 14 May 2024 11:17:35 GMT
+Content-Type: application/json; charset=utf-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 39 Ended $$$$$$
+
+****** Response Body For Transaction With Id 39 ******
+{
+  "access_token": "ya29.a0AXooCgtlswQx54vKvfL0tpjtSz57r422IHjbPUX4_KDjZkAhk35DvKfeu1rJ3_FPKeOjgCeOhHU-mPNnJMg3bkehOtKzoDhRs6I4hSrephbvDMpVnCQW6piSXR9km_uhe4jsHWI6XVas0V1MalIaXIINClqPrgAqQRCSiRzDk0-83-ATcDdPLY-piAz22uiyjnRGgKyTHXCb4uK0Gfqet54lPcQl_Je8ohKlhdw2kFq6FDcljSpAboBCct1LBn-Ist6yubhWu2YnnAaCgYKAdUSARASFQHGX2MiuheAz1jbYotX1vzDsATpog0277",
+  "expires_in": 74378,
+  "scope": "https://www.googleapis.com/auth/chromesync",
+  "token_type": "Bearer"
+}
+$$$$$$ Response Body For Transaction With Id 39 Ended $$$$$$
+
+[Traffic Filtering] Filtering accounts.google.com
+****** Request Header For Transaction With Id 42 ******
+POST /ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard HTTP/1.1
+Host: accounts.google.com
+Connection: keep-alive
+Content-Length: 1
+Origin: https://www.google.com
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: OTZ=7537562_44_44_123780_40_436260; SID=g.a000jAiJC-55o6FqZHbKl9zdApPMGOmCh-FpcaAWo1cUol7SRgP7IIcsnEdFQI-iuWiPR51_1gACgYKAc4SAQASFQHGX2MiNKzWzV5k3VfJAYR6PKa-yxoVAUF8yKpC2C3LFbeDbjwOGi1bPgli0076; __Secure-1PSID=g.a000jAiJC-55o6FqZHbKl9zdApPMGOmCh-FpcaAWo1cUol7SRgP7WU9W0ms1Xl075n_UyJQP6gACgYKAaESAQASFQHGX2MivlRO5mHkY8fo7AZjImLLdhoVAUF8yKp1xXPFziiIifamDGPJ3nXY0076; __Secure-3PSID=g.a000jAiJC-55o6FqZHbKl9zdApPMGOmCh-FpcaAWo1cUol7SRgP7_O0kjtG27s7aLCtIx4hhsAACgYKAScSAQASFQHGX2MiYMrIE651-5CN6pOaWUmxsxoVAUF8yKrsvxFFDHQgMpAuOOISKe4M0076; HSID=AMdsix4enGc8FpKab; SSID=AZay_rRPaXf5JnFeX; APISID=BjP2Uvlxv89PPYTv/AjL6S13XkR0A20t7D; SAPISID=ByqEKGkvZs1W08dc/AdU1Gx770qFGiohHS; __Secure-1PAPISID=ByqEKGkvZs1W08dc/AdU1Gx770qFGiohHS; __Secure-3PAPISID=ByqEKGkvZs1W08dc/AdU1Gx770qFGiohHS; ACCOUNT_CHOOSER=AFx_qI5FK_Iwb3-WQ5dnHwnnF2ffDfhOTN8p3UVCJZ5JKSka1fmq12MgnJqBNmCwPyjhzsSSPkYL1o1e2VBPi7Mj4tvCbVnKWNW7t--r5CffIia7hYCMz5HnTu8fgeF1l1rVHG_vj8mOv0m5apJaB1Doj1r8M_2vlCPwcRsK_0sMP14GSyp_4l4; LSID=o.drive.fife.usercontent.google.com|o.drive.google.com|o.mail.google.com|s.RU|s.youtube:g.a000jAiJCwpYVzCgE7TdCDACd1Zb5pb-srBS205whRYCDXW9XfxdIL2ENT-y9K8Ylya4-N6K1QACgYKASoSAQASFQHGX2Midt9B1wA6Z51DV7eT9rwRQhoVAUF8yKr3im9h4VhiNGIzsezwmq2h0076; __Host-1PLSID=o.drive.fife.usercontent.google.com|o.drive.google.com|o.mail.google.com|s.RU|s.youtube:g.a000jAiJCwpYVzCgE7TdCDACd1Zb5pb-srBS205whRYCDXW9Xfxdngh3aLh5MCZDI0-GbUMfUQACgYKAVcSAQASFQHGX2MiYUgAp_lj7sCcNfmHYOZBCRoVAUF8yKo2sYAENe5sRIt2_NwGjtUN0076; __Host-3PLSID=o.drive.fife.usercontent.google.com|o.drive.google.com|o.mail.google.com|s.RU|s.youtube:g.a000jAiJCwpYVzCgE7TdCDACd1Zb5pb-srBS205whRYCDXW9XfxdBkV8pgHATNGsHLc0dNd7dQACgYKAb0SAQASFQHGX2MidbhQozXWnVHvM_IlLJa1GBoVAUF8yKp47RCSmEAG9Mh5a9ZBSZf10076; __Host-GAPS=1:U5Wt6pJuMeDjQ-TSPhQU3mCZU7J7MqCbAzmy2KZ_92g7DE1UOKeV8IIQAxbknLQwhIkAN0WzI2L6Ea_zhLC69noDH6RiKw:mcQyuKVGnzPB9IpZ; AEC=AQTF6Hx7Fjcy988msrS-PlTbUt_1DDU5n6xG8IKASUd2Zpw8RwQs4F7dfw; NID=514=gZGZAhbTvGGy6Gv-OpP9AWvB-x6OPA2vnGmbD_CON1oOeitKgANn2nYlhQF9WDFaiDD9xhP79_--_q9w2zwshl8ZGQx0_SIYg0IujcDIQZ3eLtTZOyo2vonbMfWYoqVlDU36MOIFPIYQ4sWSnv3UG9fQ_Q-FvbQ53gCjGlBYBjn2Lu9QeUkVkGwnWvn_LKGlhlBZb5-dSMFzbiVE3aoG7pwHRzdX4RfH_1LB-yEgZ9IBhKFUBO0jtQqzoHXwN1LRFj9utCko525hQj3JGXIF9mJlwtlQrNvZLSfNfGn8nKvYPOR3CEEdeSV2O489fMLQMY8bkQNlDochzTFLyQY; __Secure-1PSIDTS=sidts-CjIBLwcBXE9RdxDZBmC-jUmMAKcqOKWFnZfqeaCwa85c8VWiNuM4ZqcOaPa4mwuQjYrtPRAA; __Secure-3PSIDTS=sidts-CjIBLwcBXE9RdxDZBmC-jUmMAKcqOKWFnZfqeaCwa85c8VWiNuM4ZqcOaPa4mwuQjYrtPRAA; SIDCC=AKEyXzV5fIDbL1iaWSD4jvRgm_BG6RCtHXMVCWOxeM6CWenhvMMvBAfRWKri4CXSMz-NOiVx8NY; __Secure-1PSIDCC=AKEyXzXGLfaBsWtlpKYSHEiV1KviHjeVfduZxumfwJg3MsOABuCqrW-oxEGvI7rRB0b8MwTgLA; __Secure-3PSIDCC=AKEyXzUZn_VlZuA-CqItgwOB6RxptpMWaV43b2VttrLa6td14Ir2uBwfURIksdKbSpunywAiMg
+
+
+$$$$$$ Request Header For Transaction With Id 42 Ended $$$$$$
+
+****** Request Body For Transaction With Id 42 ******
+ 
+$$$$$$ Request Body For Transaction With Id 42 Ended $$$$$$
+
+****** Response Header For Transaction With Id 42 ******
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: https://www.google.com
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 14 May 2024 11:17:35 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: script-src 'report-sample' 'nonce-JO9MEVsqIfE2OxalHpSZ9w' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/IdentityListAccountsHttp/cspreport;worker-src 'self'
+Content-Security-Policy: script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/IdentityListAccountsHttp/cspreport/allowlist
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+reporting-endpoints: default="/_/IdentityListAccountsHttp/web-reports?context=eJzjUtHikmLw1JBiOHxtB5Meyy0mIyA-GPec6SgQO6XPYA0BYiEejvMTejexCZyYOXUzEwCdDBGy"
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+Set-Cookie: SIDCC=AKEyXzXp-gGNJ2UHQTynuX1fU9BwOysH8jvrh0xnl3CwFEu72YkDG5OobiZJsXWVfp_QFOpMQG0; expires=Wed, 14-May-2025 11:17:35 GMT; path=/; domain=.google.com; priority=high
+Set-Cookie: __Secure-1PSIDCC=AKEyXzVqkSgDRHWtBBq_ZXejRZmhLsi03fzLkic8TpEW5Glp27GuX4Ybk77u1N1AxWgVd5MJ2A; expires=Wed, 14-May-2025 11:17:35 GMT; path=/; domain=.google.com; Secure; HttpOnly; priority=high
+Set-Cookie: __Secure-3PSIDCC=AKEyXzU1_TwQEf1jKFBNYRclQoFVQlrseL0pNZb8XQLYoSHaWrBbMEUHsjXDQtF2ELIKpLGFDg; expires=Wed, 14-May-2025 11:17:35 GMT; path=/; domain=.google.com; Secure; HttpOnly; priority=high; SameSite=none
+Set-Cookie: SIDCC=AKEyXzXm9KB6dT5W91oNQ7kZax5Vdwlc_1tFoYNxzjoE5K0CabGjOTaAITH93oJC-w21k7lsZek; expires=Wed, 14-May-2025 11:17:35 GMT; path=/; domain=.google.com; priority=high
+Set-Cookie: __Secure-1PSIDCC=AKEyXzVB-hU144lJTDDEGWPi42FFO6JwaH8mFuw8hFetGyIP0u0SYJPOVyTlQSqnVblyJPdObw; expires=Wed, 14-May-2025 11:17:35 GMT; path=/; domain=.google.com; Secure; HttpOnly; priority=high
+Set-Cookie: __Secure-3PSIDCC=AKEyXzV0U7r5hnxhrAZPl_tAj5BxYwtNNd2eF0iItoHa-7uofbQkBBKhttvhlj_F3DJ8WbahxQ; expires=Wed, 14-May-2025 11:17:35 GMT; path=/; domain=.google.com; Secure; HttpOnly; priority=high; SameSite=none
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 42 Ended $$$$$$
+
+****** Response Body For Transaction With Id 42 ******
+["gaia.l.a.r",[["gaia.l.a",1,"\xD0\x92\xD0\xBB\xD0\xB0\xD0\xB4\xD0\xB8\xD0\xBC\xD0\xB8\xD1\x80 \xD0\x91\xD1\x83\xD0\xB3\xD0\xB0\xD0\xBA\xD0\xBE\xD0\xB2","bugchig@gmail.com","https://lh3.googleusercontent.com/-ikZHezSYSeg/AAAAAAAAAAI/AAAAAAAAAAA/UDVLKSJsiIY/s48-c/photo.jpg",1,1,0,null,1,"101239279666609526857",null,null,null,null,1]]]
+$$$$$$ Response Body For Transaction With Id 42 Ended $$$$$$
+
+****** Request Header For Transaction With Id 54 ******
+GET /cgi-bin/welcome.pl?signOff=true HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: frame
+Referer: http://localhost:1080/WebTours/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+$$$$$$ Request Header For Transaction With Id 54 Ended $$$$$$
+
+****** Response Header For Transaction With Id 54 ******
+HTTP/1.1 200 OK
+Date: Tue, 14 May 2024 11:17:42 GMT
+Server: Apache/2.2.21 (Win32)
+Set-Cookie: MSO=SID&1715685462; path=/
+Set-Cookie: MTUserInfo=; path=/; expires=Mon, 13-May-2024 11:17:42 GMT
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 54 Ended $$$$$$
+
+****** Response Body For Transaction With Id 54 ******
+<!-- 
+ A Session ID has been created and loaded into a cookie called MSO.
+ Also, the server options have been loaded into the cookie called
+ MSO as well.  The server options can be set via the Admin page.
+ --->
+
+<html>
+<title>Web Tours</title>
+   <!-- Frame Set -->
+   <frameset cols="160,*" border="1" frameborder="1">
+      <!-- Navigation Frame -->
+      <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" 
+            noresize="noresize" scrolling="auto"/>
+      <!-- Home Frame -->
+      <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" 
+            noresize="noresize" scrolling="auto"/>
+   </frameset>
+</html>
+
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 54 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Start Log Message ******
+Set SSL version to 'AUTO'
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 54 ****** (Location Flag : tFlagInsertEnd, Location ID : 54)
+	web_custom_request("welcome.pl",
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=true",
+		"Method=GET",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/WebTours/",
+		"Snapshot=t1.inf",
+		"Mode=HTTP",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 54 Ended $$$$$$
+
+****** Request Header For Transaction With Id 57 ******
+GET /cgi-bin/nav.pl?in=home HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: frame
+Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=true
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: MSO=SID&1715685462
+
+
+$$$$$$ Request Header For Transaction With Id 57 Ended $$$$$$
+
+****** Response Header For Transaction With Id 57 ******
+HTTP/1.1 200 OK
+Date: Tue, 14 May 2024 11:17:42 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: Mon, 13 May 2024 11:17:42 GMT
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 57 Ended $$$$$$
+
+****** Response Body For Transaction With Id 57 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Web Tours Navigation Bar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<style>
+blockquote {font-family: tahoma; font-size : 10pt}
+H1 {font-family: tahoma; font-size : 22pt; color: #993333}
+H3 {font-family: tahoma; font-size : 10pt; color: black}
+small {font-family: tahoma; font-size : 8pt}
+</style>
+<form method="post" action="/cgi-bin/login.pl" target="body">
+<input type="hidden" name="userSession" value="138978.166221142HVtiziQptcftciQcpVDzff"/>
+<table border="0"><tr><td>&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td>
+<td><small>&nbsp;Username</small></td></tr>
+<tr><td>&nbsp;</td>
+<td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>
+<tr><td>&nbsp;</td>
+<td><small>&nbsp;Password</small></td>
+<tr><td>&nbsp;</td>
+<td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td>
+<td><input type="image" name="login" value="Login" alt="Login" border="1" 
+src="/WebTours/images/mer_login.gif"/></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table><input type="hidden" name="JSFormSubmit" value="off"/>
+</form>
+
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 57 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 57 ****** (Location Flag : tFlagInsertEnd, Location ID : 57)
+	web_custom_request("nav.pl",
+		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home",
+		"Method=GET",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=true",
+		"Snapshot=t2.inf",
+		"Mode=HTTP",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 57 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("sec-ch-ua",
+		"\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("sec-ch-ua-mobile",
+		"?0");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("sec-ch-ua-platform",
+		"\"Windows\"");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("Upgrade-Insecure-Requests",
+		"1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("Sec-Fetch-Site",
+		"same-origin");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("Sec-Fetch-Mode",
+		"navigate");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 54)
+	web_add_auto_header("Sec-Fetch-Dest",
+		"frame");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 60 ******
+GET /favicon.ico HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:1080/WebTours/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: MSO=SID&1715685462
+
+
+$$$$$$ Request Header For Transaction With Id 60 Ended $$$$$$
+
+****** Response Header For Transaction With Id 60 ******
+HTTP/1.1 404 Not Found
+Date: Tue, 14 May 2024 11:17:42 GMT
+Server: Apache/2.2.21 (Win32)
+Content-Length: 209
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 60 Ended $$$$$$
+
+****** Response Body For Transaction With Id 60 ******
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /favicon.ico was not found on this server.</p>
+</body></html>
+
+$$$$$$ Response Body For Transaction With Id 60 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+	/cgi-bin/nav.pl?in=home
+	Form: name= action=/cgi-bin/login.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 70 ******
+POST /service/update2/json?cup2key=14:OAlomLu2FbMxOpGV6j-WGKQrjRW02IakVEPvtFVDbcw&cup2hreq=fcb2e32fb09b6e518e440b61507433641a83b98bc46d207e984abf109e8e874a HTTP/1.1
+Host: update.googleapis.com
+Connection: keep-alive
+Content-Length: 8675
+X-Goog-Update-AppId: niikhdgajlphfehepabhhblakbdgeefj,neifaoindggfcjicffkgpmnlppeffabd,gcmjkmgdlgnkkcocmoeiminaijmmjnii,obedbbhbpmojnkanicioggnmelmoomoc,lmelglejhemejginpboagddgdfbepgmp,kiabhabjdbkjdpjbpigfodbdjmbglcoo,giekcmmlnklenlaomppkphknjmnnpneh,khaoiebndkojlmppeemjhbpbandiljpe,hfnkpimlhhgieaddgfemjhofmfblmnib,laoigpblnllgcgjnjnllmfolckpjlhki,oimompecagnajdejgnnjijobebaeigek,efniojlnjndmcbiieegkicadnoecjjef,ehgidpndbllacpjalkiimkbadgjfnnmc,jflookgnkcckhobaglndicnbbgbonegd,ggkkehgbnfjpeggfpleeakpidbkibbmn,jamhcnnkihinmdlkakkaopbjbbcngflc,ojhpjlocmbogdgmfpkhlaaeamibhnphh,jflhchccmppkfebkiaminageehmchikm,llkgjffcdpffmhiakmfcdcblohccpfmo,ihnlcenocehgdaegdmhbidjhnhdchfmm,eeigpngbgcognadeebkilcpcaedhellh,gonpemdgkjcecdgbnaabipppbmgfggbe
+X-Goog-Update-Interactivity: bg
+X-Goog-Update-Updater: chrome-124.0.6367.158
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 70 Ended $$$$$$
+
+****** Request Body For Transaction With Id 70 ******
+{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"appid":"niikhdgajlphfehepabhhblakbdgeefj","brand":"GGLS","cohort":"1:1uh3:","cohortname":"Auto Main Cohort.","enabled":true,"installdate":6134,"lang":"ru","packages":{"package":[{"fp":"1.94cb92178c162cc17b0c2c85f2ab01d6b201001eb23151e2c2286fe9d44032db"}]},"ping":{"ping_freshness":"{a1f29e51-c380-425c-8b7b-ea3c298d7ea8}","rd":6343},"updatecheck":{},"version":"2024.5.13.0"},{"appid":"neifaoindggfcjicffkgpmnlppeffabd","brand":"GGLS","cohort":"1:1299:","cohorthint":"Windows (102+, canary/dev/beta/stable)","cohortname":"Auto","enabled":true,"installdate":5819,"lang":"ru","packages":{"package":[{"fp":"1.c900ba9a2d8318263fd43782ee6fd5fb50bad78bf0eb2c972b5922c458af45ed"}]},"ping":{"ping_freshness":"{0a17c2d6-245e-48f4-a511-7e941d8f4ce2}","rd":6343},"updatecheck":{},"version":"1.0.2738.0"},{"appid":"gcmjkmgdlgnkkcocmoeiminaijmmjnii","brand":"GGLS","cohort":"1:bm1:","cohorthint":"M54AndUp","cohortname":"Stable","enabled":true,"lang":"ru","p
+$$$$$$ Request Body For Transaction With Id 70 Ended $$$$$$
+
+****** Response Header For Transaction With Id 70 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-KmYOPY_smxJUJ0-YnywFaQ' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 14 May 2024 11:18:14 GMT
+X-Cup-Server-Proof: 30440220644fd2e9dde9dab308ec165ed244dc962fc075620f1b1d7ac9f2db14a176db0402206f701d3cba78d38df7f237d32d4879c937cbb7a75de826e1f02491ebd8fbb5ef:fcb2e32fb09b6e518e440b61507433641a83b98bc46d207e984abf109e8e874a
+ETag: W/"30440220644fd2e9dde9dab308ec165ed244dc962fc075620f1b1d7ac9f2db14a176db0402206f701d3cba78d38df7f237d32d4879c937cbb7a75de826e1f02491ebd8fbb5ef:fcb2e32fb09b6e518e440b61507433641a83b98bc46d207e984abf109e8e874a"
+Content-Type: application/json; charset=utf-8
+X-Daynum: 6343
+X-Daystart: 15494
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 2414
+Server: GSE
+
+
+$$$$$$ Response Header For Transaction With Id 70 Ended $$$$$$
+
+****** Response Body For Transaction With Id 70 ******
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":15494,"elapsed_days":6343},"app":[{"appid":"niikhdgajlphfehepabhhblakbdgeefj","cohort":"1:1uh3:","status":"ok","cohortname":"Auto Main Cohort.","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Windows (102+, canary/dev/beta/stable)","appid":"neifaoindggfcjicffkgpmnlppeffabd","cohort":"1:1299:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"M54AndUp","appid":"gcmjkmgdlgnkkcocmoeiminaijmmjnii","cohort":"1:bm1:","status":"ok","cohortname":"Stable","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"obedbbhbpmojnkanicioggnmelmoomoc","cohort":"1:s6f:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"lmelglejhemejginpboagddgdfbepgmp","cohort":"1:lwl:2dxr@0.025","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"kiabhabjdbkjdpjbpigfodbdjmbglcoo","cohort":"1:v3l:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"giekcmmlnklenlaomppkphknjmnnpneh","cohort":"1:j5l:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"khaoiebndkojlmppeemjhbpbandiljpe","cohort":"1:cux:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"hfnkpimlhhgieaddgfemjhofmfblmnib","cohort":"1:2879:","status":"ok","cohortname":"Auto androidlowmem","ping":{"status":"ok"},"updatecheck":{"status":"ok","urls":{"url":[{"codebase":"http://edgedl.me.gvt1.com/edgedl/release2/chrome_component/ad6j32awn5pn6d6qmizjuiiozkaq_8761/"},{"codebase":"https://edgedl.me.gvt1.com/edgedl/release2/chrome_component/ad6j32awn5pn6d6qmizjuiiozkaq_8761/"},{"codebase":"http://dl.google.com/release2/chrome_component/ad6j32awn5pn6d6qmizjuiiozkaq_8761/"},{"codebase":"https://dl.google.com/release2/chrome_component/ad6j32awn5pn6d6qmizjuiiozkaq_8761/"},{"codebase":"http://www.google.com/dl/release2/chrome_component/ad6j32awn5pn6d6qmizjuiiozkaq_8761/"},{"codebase":"https://www.google.com/dl/release2/chrome_component/ad6j32awn5pn6d6qmizjuiiozkaq_8761/"},{"codebasediff":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/1.3107969c077208355c7114a652d4329e8bfcb7e778c90edd6a747d6385f3c2dc/1.d6b7e832ed4d4a5465ca61141d851a27c081d5401ec3785bbf4ea5dce05e1a9a/"}]},"manifest":{"version":"8761","packages":{"package":[{"hash_sha256":"3107969c077208355c7114a652d4329e8bfcb7e778c90edd6a747d6385f3c2dc","size":25900,"sizediff":2105,"name":"hfnkpimlhhgieaddgfemjhofmfblmnib_8761_all_j333avszvtslsuoy77cb2bb22m.crx3","fp":"1.3107969c077208355c7114a652d4329e8bfcb7e778c90edd6a747d6385f3c2dc","hashdiff_sha256":"b10a6064be641bc15407d4575a8cef091355b2403606c4368472d2a7d4ca90b9","namediff":"b10a6064be641bc15407d4575a8cef091355b2403606c4368472d2a7d4ca90b9.puff","required":true,"hash":"9lIDUYLdsuGIwDd9wEp9RvkAadI\u003d","hashdiff":""}]}}}},{"cohorthint":"Auto","appid":"laoigpblnllgcgjnjnllmfolckpjlhki","cohort":"1:10zr:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"4.10.2557.0 for Chrome 95+","appid":"oimompecagnajdejgnnjijobebaeigek","cohort":"1:1zdx:","status":"ok","cohortname":"4.10.2710.0 to Windows (x86/x64)","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto Stage3","appid":"efniojlnjndmcbiieegkicadnoecjjef","cohort":"1:18ql:","status":"ok","cohortname":"Auto Stage3","ping":{"status":"ok"},"updatecheck":{"status":"ok","urls":{"url":[{"codebase":"http://edgedl.me.gvt1.com/edgedl/release2/chrome_component/n6djinnxjdvy3wiaqzt6craiw4_955/"},{"codebase":"https://edgedl.me.gvt1.com/edgedl/release2/chrome_component/n6djinnxjdvy3wiaqzt6craiw4_955/"},{"codebase":"http://dl.google.com/release2/chrome_component/n6djinnxjdvy3wiaqzt6craiw4_955/"},{"codebase":"https://dl.google.com/release2/chrome_component/n6djinnxjdvy3wiaqzt6craiw4_955/"},{"codebase":"http://www.google.com/dl/release2/chrome_component/n6djinnxjdvy3wiaqzt6craiw4_955/"},{"codebase":"https://www.google.com/dl/release2/chrome_component/n6djinnxjdvy3wiaqzt6craiw4_955/"},{"codebasediff":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/efniojlnjndmcbiieegkicadnoecjjef/1.7514fc9d16d30a7c4330c75b679459a909a8c1d0a215d0574726f7bc19e8408c/1.d83d000bbae784acceea698f86c18287f9573e62b6756297d0bd4cdc0207c4eb/"}]},"manifest":{"version":"955","packages":{"package":[{"hash_sha256":"7514fc9d16d30a7c4330c75b679459a909a8c1d0a215d0574726f7bc19e8408c","size":153886,"sizediff":10038,"name":"efniojlnjndmcbiieegkicadnoecjjef_955_all_adfsqsbqnfpgyroc7h46khjmxp2a.crx3","fp":"1.7514fc9d16d30a7c4330c75b679459a909a8c1d0a215d0574726f7bc19e8408c","hashdiff_sha256":"79415b75fe461a6b6aecfe2f504baf76f226fc49cd743ffd115124c9297082bb","namediff":"79415b75fe461a6b6aecfe2f504baf76f226fc49cd743ffd115124c9297082bb.puff","required":true,"hash":"/Pyk4FOr2gqB0IYV8WlmQeehzGk\u003d","hashdiff":""}]}}}},{"cohorthint":"stable64","appid":"ehgidpndbllacpjalkiimkbadgjfnnmc","cohort":"1:ofl:","status":"ok","cohortname":"stable64","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"jflookgnkcckhobaglndicnbbgbonegd","cohort":"1:s7x:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"ok","urls":{"url":[{"codebase":"http://edgedl.me.gvt1.com/edgedl/release2/chrome_component/bvfvlphud3tuxsq2jptcppuefq_3029/"},{"codebase":"https://edgedl.me.gvt1.com/edgedl/release2/chrome_component/bvfvlphud3tuxsq2jptcppuefq_3029/"},{"codebase":"http://dl.google.com/release2/chrome_component/bvfvlphud3tuxsq2jptcppuefq_3029/"},{"codebase":"https://dl.google.com/release2/chrome_component/bvfvlphud3tuxsq2jptcppuefq_3029/"},{"codebase":"http://www.google.com/dl/release2/chrome_component/bvfvlphud3tuxsq2jptcppuefq_3029/"},{"codebase":"https://www.google.com/dl/release2/chrome_component/bvfvlphud3tuxsq2jptcppuefq_3029/"},{"codebasediff":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/jflookgnkcckhobaglndicnbbgbonegd/1.bcd7ce195652ac4d6d3e79888a6a21b5175c69e617fcdce5d765df921456dc64/1.a924d1d2fd7fa87c509ddc39c5837d34b589ac76d07abb7736ae7f854fc9d937/"}]},"manifest":{"version":"3029","packages":{"package":[{"hash_sha256":"bcd7ce195652ac4d6d3e79888a6a21b5175c69e617fcdce5d765df921456dc64","size":72425,"sizediff":30693,"name":"jflookgnkcckhobaglndicnbbgbonegd_3029_all_adnxd2rvpn477d4egwq6cpd2mz6q.crx3","fp":"1.bcd7ce195652ac4d6d3e79888a6a21b5175c69e617fcdce5d765df921456dc64","hashdiff_sha256":"fb4fbacf6b39ff01467763cbdad7dd69b4e5ff133c824dce6eab16daa436527d","namediff":"fb4fbacf6b39ff01467763cbdad7dd69b4e5ff133c824dce6eab16daa436527d.puff","required":true,"hash":"vcyCJmuxfLFj9GOKGjUd0KESpI0\u003d","hashdiff":""}]}}}},{"cohorthint":"108-and-above-all-users","appid":"ggkkehgbnfjpeggfpleeakpidbkibbmn","cohort":"1:ut9/1a0f:2c99@0.1","status":"ok","cohortname":"M108 and Above","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"jamhcnnkihinmdlkakkaopbjbbcngflc","cohort":"1:wvr:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"ojhpjlocmbogdgmfpkhlaaeamibhnphh","cohort":"1:w0x:","status":"ok","cohortname":"All users","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"appid":"jflhchccmppkfebkiaminageehmchikm","cohort":"1:26yf:","status":"ok","cohortname":"Stable","ping":{"status":"ok"},"updatecheck":{"status":"ok","urls":{"url":[{"codebase":"http://edgedl.me.gvt1.com/edgedl/release2/chrome_component/ianc2xvjbs5fyyppw3tz4if5r4_2024.5.12.1/"},{"codebase":"https://edgedl.me.gvt1.com/edgedl/release2/chrome_component/ianc2xvjbs5fyyppw3tz4if5r4_2024.5.12.1/"},{"codebase":"http://dl.google.com/release2/chrome_component/ianc2xvjbs5fyyppw3tz4if5r4_2024.5.12.1/"},{"codebase":"https://dl.google.com/release2/chrome_component/ianc2xvjbs5fyyppw3tz4if5r4_2024.5.12.1/"},{"codebase":"http://www.google.com/dl/release2/chrome_component/ianc2xvjbs5fyyppw3tz4if5r4_2024.5.12.1/"},{"codebase":"https://www.google.com/dl/release2/chrome_component/ianc2xvjbs5fyyppw3tz4if5r4_2024.5.12.1/"},{"codebasediff":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/jflhchccmppkfebkiaminageehmchikm/1.f2f0f6f37e9a60f810e787224940032753d3c408311aafd18ea6ad449f8c2175/1.fd1a47f992abaaf8af76888f78b26b494c01003385efaabd036edb87e0fba0d2/"}]},"manifest":{"version":"2024.5.12.1","packages":{"package":[{"hash_sha256":"f2f0f6f37e9a60f810e787224940032753d3c408311aafd18ea6ad449f8c2175","size":10127,"sizediff":2153,"name":"jflhchccmppkfebkiaminageehmchikm_2024.05.12.01_all_ac2nixffqkqysi7xv362h2js4wlq.crx3","fp":"1.f2f0f6f37e9a60f810e787224940032753d3c408311aafd18ea6ad449f8c2175","hashdiff_sha256":"49a38391990fed5e8e8e00de162d7c3c5c50a51addec77168b882f095f551503","namediff":"49a38391990fed5e8e8e00de162d7c3c5c50a51addec77168b882f095f551503.puff","required":true,"hash":"UQ0dZLyxNTPrUV0+7JyZLCtRZZQ\u003d","hashdiff":""}]}}}},{"appid":"llkgjffcdpffmhiakmfcdcblohccpfmo","cohort":"1::","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"_esbAllowlist":"true","status":"noupdate"}},{"cohorthint":"Win (Including up-to-date)","appid":"ihnlcenocehgdaegdmhbidjhnhdchfmm","cohort":"1::","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"Auto","appid":"eeigpngbgcognadeebkilcpcaedhellh","cohort":"1:w59:","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}},{"cohorthint":"General release","appid":"gonpemdgkjcecdgbnaabipppbmgfggbe","cohort":"1:z1x:2e03@0.025","status":"ok","cohortname":"Auto","ping":{"status":"ok"},"updatecheck":{"status":"noupdate"}}]}}
+$$$$$$ Response Body For Transaction With Id 70 Ended $$$$$$
+
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 86 ******
+POST /service/update2/json HTTP/1.1
+Host: update.googleapis.com
+Connection: keep-alive
+Content-Length: 1519
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 86 Ended $$$$$$
+
+****** Request Body For Transaction With Id 86 ******
+{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"appid":"hfnkpimlhhgieaddgfemjhofmfblmnib","brand":"GGLS","cohort":"1:2879:","cohorthint":"Auto","cohortname":"Auto androidlowmem","enabled":true,"event":[{"download_time_ms":4039,"downloaded":2105,"downloader":"bits","eventresult":1,"eventtype":14,"nextversion":"8761","previousversion":"8758","total":2105,"url":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/hfnkpimlhhgieaddgfemjhofmfblmnib/1.3107969c077208355c7114a652d4329e8bfcb7e778c90edd6a747d6385f3c2dc/1.d6b7e832ed4d4a5465ca61141d851a27c081d5401ec3785bbf4ea5dce05e1a9a/b10a6064be641bc15407d4575a8cef091355b2403606c4368472d2a7d4ca90b9.puff"},{"diffresult":1,"eventresult":1,"eventtype":3,"nextfp":"1.3107969c077208355c7114a652d4329e8bfcb7e778c90edd6a747d6385f3c2dc","nextversion":"8761","previousfp":"1.d6b7e832ed4d4a5465ca61141d851a27c081d5401ec3785bbf4ea5dce05e1a9a","previousversion":"8758"}],"lang":"ru","packages":{"package":[{"fp":"1.3107969c077208355c7114a652d4329e8bfcb7e778c90
+$$$$$$ Request Body For Transaction With Id 86 Ended $$$$$$
+
+****** Response Header For Transaction With Id 86 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-t6yLPM6s3FaUJCo12vvD3A' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 14 May 2024 11:18:21 GMT
+Content-Type: application/json; charset=utf-8
+X-Daynum: 6343
+X-Daystart: 15501
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 185
+Server: GSE
+
+
+$$$$$$ Response Header For Transaction With Id 86 Ended $$$$$$
+
+****** Response Body For Transaction With Id 86 ******
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":15501,"elapsed_days":6343},"app":[{"cohorthint":"Auto","appid":"hfnkpimlhhgieaddgfemjhofmfblmnib","status":"ok","event":[{"status":"ok"},{"status":"ok"}]}]}}
+$$$$$$ Response Body For Transaction With Id 86 Ended $$$$$$
+
+****** Request Header For Transaction With Id 95 ******
+GET /cgi-bin/login.pl?username=&password=&getInfo=true HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: frame
+Referer: http://localhost:1080/WebTours/home.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: MSO=SID&1715685462
+
+
+$$$$$$ Request Header For Transaction With Id 95 Ended $$$$$$
+
+****** Response Header For Transaction With Id 95 ******
+HTTP/1.1 200 OK
+Date: Tue, 14 May 2024 11:18:34 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 95 Ended $$$$$$
+
+****** Response Body For Transaction With Id 95 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>User Information</title>
+<script src="/WebTours/profileValidate.js" type="text/JavaScript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+<style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><BR/><center><H1><b><font color="#003366">Customer Profile</font></b></H1></center><blockquote><tr><td><B>First time registering? Please complete the form below.</B><BR/>Please choose a username and password combination for your account.<BR/>We'd also like some additional contact information for yourself. We'll use it as default shipping and billing information when making all your travel arrangements.<P><tr><td align=center><form method="post" action="login.pl" enctype="application/x-www-form-urlencoded" target="info" onsubmit>
+<table><tr><td align="left"><blockquote>Username : </td> <td align="left"><input type="text" name="username"  size="20" /></td></tr> <tr><td align="left"><blockquote>Password : </td> <td align="left"><input type="password" name="password"  size="20" /></td></tr> <tr><td align="left"><blockquote>Confirm : </td> <td align="left"><input type="password" name="passwordConfirm"  size="20" /></td></tr> <tr><td> </td></tr> <tr><td align="left"><blockquote>First Name : </td> <td align="left"><input type="text" name="firstName"  size="20" /></td></tr> <tr><td align="left"><blockquote>Last Name : </td> <td align="left"><input type="text" name="lastName"  size="20" /></td></tr> <tr><td align="left"><blockquote>Street Address : </td> <td align="left"><input type="text" name="address1"  size="30" /></td></tr> <tr><td align="left"><blockquote>City/State/Zip : </td> <td align="left"><input type="text" name="address2"  size="30" /></td></tr> <tr><td align="left">&nbsp;</td> <td align="right">&nbsp;</td></tr> <tr><td align="center" colspan="2"><input type="image" name="register" src="/WebTours/images/button_next.gif" border="0" /></td></tr></table></form></table></blockquote>
+</body>
+</html>
+
+$$$$$$ Response Body For Transaction With Id 95 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/cgi-bin/welcome.pl?signOff=true
+	/cgi-bin/nav.pl?in=home
+	Form: name= action=/cgi-bin/login.pl
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 95 ****** (Location Flag : tFlagInsertEnd, Location ID : 95)
+	web_custom_request("login.pl",
+		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
+		"Method=GET",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/WebTours/home.html",
+		"Snapshot=t3.inf",
+		"Mode=HTTP",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 95 Ended $$$$$$
+
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 98 ******
+POST /service/update2/json HTTP/1.1
+Host: update.googleapis.com
+Connection: keep-alive
+Content-Length: 1516
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 98 Ended $$$$$$
+
+****** Request Body For Transaction With Id 98 ******
+{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"appid":"efniojlnjndmcbiieegkicadnoecjjef","brand":"GGLS","cohort":"1:18ql:","cohorthint":"Auto Stage3","cohortname":"Auto Stage3","enabled":true,"event":[{"download_time_ms":4061,"downloaded":10038,"downloader":"bits","eventresult":1,"eventtype":14,"nextversion":"955","previousversion":"950","total":10038,"url":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/efniojlnjndmcbiieegkicadnoecjjef/1.7514fc9d16d30a7c4330c75b679459a909a8c1d0a215d0574726f7bc19e8408c/1.d83d000bbae784acceea698f86c18287f9573e62b6756297d0bd4cdc0207c4eb/79415b75fe461a6b6aecfe2f504baf76f226fc49cd743ffd115124c9297082bb.puff"},{"diffresult":1,"eventresult":1,"eventtype":3,"nextfp":"1.7514fc9d16d30a7c4330c75b679459a909a8c1d0a215d0574726f7bc19e8408c","nextversion":"955","previousfp":"1.d83d000bbae784acceea698f86c18287f9573e62b6756297d0bd4cdc0207c4eb","previousversion":"950"}],"lang":"ru","packages":{"package":[{"fp":"1.7514fc9d16d30a7c4330c75b679459a909a8c1d0a215d05
+$$$$$$ Request Body For Transaction With Id 98 Ended $$$$$$
+
+****** Response Header For Transaction With Id 98 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-hmmF_wqW3tx7UIlexRLQXg' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 14 May 2024 11:18:34 GMT
+Content-Type: application/json; charset=utf-8
+X-Daynum: 6343
+X-Daystart: 15514
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 190
+Server: GSE
+
+
+$$$$$$ Response Header For Transaction With Id 98 Ended $$$$$$
+
+****** Response Body For Transaction With Id 98 ******
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":15514,"elapsed_days":6343},"app":[{"cohorthint":"Auto Stage3","appid":"efniojlnjndmcbiieegkicadnoecjjef","status":"ok","event":[{"status":"ok"},{"status":"ok"}]}]}}
+$$$$$$ Response Body For Transaction With Id 98 Ended $$$$$$
+
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 106 ******
+POST /service/update2/json HTTP/1.1
+Host: update.googleapis.com
+Connection: keep-alive
+Content-Length: 1506
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 106 Ended $$$$$$
+
+****** Request Body For Transaction With Id 106 ******
+{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"appid":"jflookgnkcckhobaglndicnbbgbonegd","brand":"GGLS","cohort":"1:s7x:","cohorthint":"Auto","cohortname":"Auto","enabled":true,"event":[{"download_time_ms":4041,"downloaded":30693,"downloader":"bits","eventresult":1,"eventtype":14,"nextversion":"3029","previousversion":"3028","total":30693,"url":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/jflookgnkcckhobaglndicnbbgbonegd/1.bcd7ce195652ac4d6d3e79888a6a21b5175c69e617fcdce5d765df921456dc64/1.a924d1d2fd7fa87c509ddc39c5837d34b589ac76d07abb7736ae7f854fc9d937/fb4fbacf6b39ff01467763cbdad7dd69b4e5ff133c824dce6eab16daa436527d.puff"},{"diffresult":1,"eventresult":1,"eventtype":3,"nextfp":"1.bcd7ce195652ac4d6d3e79888a6a21b5175c69e617fcdce5d765df921456dc64","nextversion":"3029","previousfp":"1.a924d1d2fd7fa87c509ddc39c5837d34b589ac76d07abb7736ae7f854fc9d937","previousversion":"3028"}],"lang":"ru","packages":{"package":[{"fp":"1.bcd7ce195652ac4d6d3e79888a6a21b5175c69e617fcdce5d765df9214
+$$$$$$ Request Body For Transaction With Id 106 Ended $$$$$$
+
+****** Response Header For Transaction With Id 106 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-FbsdXNsDNAuTfeKIfQ4qRg' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 14 May 2024 11:18:40 GMT
+Content-Type: application/json; charset=utf-8
+X-Daynum: 6343
+X-Daystart: 15520
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 184
+Server: GSE
+
+
+$$$$$$ Response Header For Transaction With Id 106 Ended $$$$$$
+
+****** Response Body For Transaction With Id 106 ******
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":15520,"elapsed_days":6343},"app":[{"cohorthint":"Auto","appid":"jflookgnkcckhobaglndicnbbgbonegd","status":"ok","event":[{"status":"ok"},{"status":"ok"}]}]}}
+$$$$$$ Response Body For Transaction With Id 106 Ended $$$$$$
+
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 112 ******
+POST /service/update2/json HTTP/1.1
+Host: update.googleapis.com
+Connection: keep-alive
+Content-Length: 1541
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+
+$$$$$$ Request Header For Transaction With Id 112 Ended $$$$$$
+
+****** Request Body For Transaction With Id 112 ******
+{"request":{"@os":"win","@updater":"chrome","acceptformat":"crx3,puff","app":[{"appid":"jflhchccmppkfebkiaminageehmchikm","brand":"GGLS","cohort":"1:26yf:","cohortname":"Stable","enabled":true,"event":[{"download_time_ms":4027,"downloaded":2153,"downloader":"bits","eventresult":1,"eventtype":14,"nextversion":"2024.5.12.1","previousversion":"2024.5.11.1","total":2153,"url":"http://edgedl.me.gvt1.com/edgedl/diffgen-puffin/jflhchccmppkfebkiaminageehmchikm/1.f2f0f6f37e9a60f810e787224940032753d3c408311aafd18ea6ad449f8c2175/1.fd1a47f992abaaf8af76888f78b26b494c01003385efaabd036edb87e0fba0d2/49a38391990fed5e8e8e00de162d7c3c5c50a51addec77168b882f095f551503.puff"},{"diffresult":1,"eventresult":1,"eventtype":3,"nextfp":"1.f2f0f6f37e9a60f810e787224940032753d3c408311aafd18ea6ad449f8c2175","nextversion":"2024.5.12.1","previousfp":"1.fd1a47f992abaaf8af76888f78b26b494c01003385efaabd036edb87e0fba0d2","previousversion":"2024.5.11.1"}],"installdate":6166,"lang":"ru","packages":{"package":[{"fp":"1.f2f0f6f37e9a60f810e78722494003
+$$$$$$ Request Body For Transaction With Id 112 Ended $$$$$$
+
+****** Response Header For Transaction With Id 112 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-F1WFYXo0EoYRguOBZTyYxA' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 14 May 2024 11:18:45 GMT
+Content-Type: application/json; charset=utf-8
+X-Daynum: 6343
+X-Daystart: 15525
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 171
+Server: GSE
+
+
+$$$$$$ Response Header For Transaction With Id 112 Ended $$$$$$
+
+****** Response Body For Transaction With Id 112 ******
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":15525,"elapsed_days":6343},"app":[{"appid":"jflhchccmppkfebkiaminageehmchikm","status":"ok","event":[{"status":"ok"},{"status":"ok"}]}]}}
+$$$$$$ Response Body For Transaction With Id 112 Ended $$$$$$
+
+****** Request Header For Transaction With Id 119 ******
+POST /cgi-bin/login.pl HTTP/1.1
+Host: localhost:1080
+Connection: keep-alive
+Content-Length: 134
+Cache-Control: max-age=0
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+Origin: http://localhost:1080
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: frame
+Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: MSO=SID&1715685462
+
+
+$$$$$$ Request Header For Transaction With Id 119 Ended $$$$$$
+
+****** Request Body For Transaction With Id 119 ******
+username=dorik&password=dor&passwordConfirm=dor&firstName=Dorik&lastName=Dor&address1=12345&address2=Moscow&register.x=51&register.y=5
+$$$$$$ Request Body For Transaction With Id 119 Ended $$$$$$
+
+****** Response Header For Transaction With Id 119 ******
+HTTP/1.1 200 OK
+Date: Tue, 14 May 2024 11:19:45 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Set-Cookie: MTUserInfo=firstName&Dorik&address2&Moscow&username&dorik&hash&75&lastName&Dor&address1&12345&creditCard&&expDate&; path=/
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+
+
+$$$$$$ Response Header For Transaction With Id 119 Ended $$$$$$
+
+****** Response Body For Transaction With Id 119 ******
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Welcome to Web Tours</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body bgcolor="#E0E7F1">
+
+<br/><br/><br/>
+
+
+<p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black}</style><blockquote>Thank you, <b>dorik</b>, for registering and welcome to the Web Tours family.
+We hope we can meet all your current and future travel needs.  If you have any questions, feel free 
+to ask our support staff.   Click below when you're ready to plan your dream trip...<p /><center><a href=welcome.pl?page=menus target='body'><img src=/WebTours/images/button_next.gif border=0></a></center></blockquote>
+</body>
+</html>
+$$$$$$ Response Body For Transaction With Id 119 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+	/cgi-bin/login.pl?username=&password=&getInfo=true
+	Form: name= action=login.pl
+	The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 119 ****** (Location Flag : tFlagInsertEnd, Location ID : 119)
+	web_custom_request("login.pl_2",
+		"URL=http://localhost:1080/cgi-bin/login.pl",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true",
+		"Snapshot=t4.inf",
+		"Mode=HTTP",
+		"Body=username=dorik&password=dor&passwordConfirm=dor&firstName=Dorik&lastName=Dor&address1=12345&address2=Moscow&register.x=51&register.y=5",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 119 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 95)
+	web_add_auto_header("Sec-Fetch-User",
+		"?1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+[Traffic Filtering] Filtering www.googleapis.com
+****** Request Header For Transaction With Id 126 ******
+POST /oauth2/v4/token HTTP/1.1
+Host: www.googleapis.com
+Connection: keep-alive
+Content-Length: 298
+Content-Type: application/x-www-form-urlencoded
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+$$$$$$ Request Header For Transaction With Id 126 Ended $$$$$$
+
+****** Request Body For Transaction With Id 126 ******
+client_id=77185425430.apps.googleusercontent.com&client_secret=OTJgUOQcT7lO7GsGZq2G4IlT&grant_type=refresh_token&refresh_token=1//03FWm1KK8WOIGCgYIARAAGAMSNwF-L9IraUn81Vef4T2C-PqnoknU4kZ5rE_thLi3iwLdmlJ54xxaa1gV-UhnjOu9zgdZV726t5Y&scope=https://www.googleapis.com/auth/identity.passwords.leak.check
+$$$$$$ Request Body For Transaction With Id 126 Ended $$$$$$
+
+****** Response Header For Transaction With Id 126 ******
+HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Tue, 14 May 2024 11:19:47 GMT
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+
+$$$$$$ Response Header For Transaction With Id 126 Ended $$$$$$
+
+****** Response Body For Transaction With Id 126 ******
+{
+  "access_token": "ya29.a0AXooCgtMH7TosylYw4DQDXKstoPkh5sOMzVlvnUuwQqEe9hpTcAGMdhTcRweL5ZWbmam_JJhjmA2xNEz_IAjvtA7kenLsSLYk9UGIFFeYjeOQPIe6yEJARGDBkrH84bANacK982KIBYF-6ASatpIt6nEzKV5tqmyERf7dN4_kHLjj4PbgIS8XZh39QfubwT3nHw83x-_laHaqLqq31QMovmMC_Fh1QXZFKfcCMIgTNc7jssDuGxwL0B9puUaqpB7fr9D4aNefQaCgYKAVASARASFQHGX2Miyo54R--SggE80qy8PfNEyw0273",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/identity.passwords.leak.check",
+  "token_type": "Bearer"
+}
+$$$$$$ Response Body For Transaction With Id 126 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 119)
+	web_add_header("Origin",
+		"http://localhost:1080");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+

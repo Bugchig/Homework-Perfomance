@@ -1,0 +1,13 @@
+[t7]
+SnapshotXmlFile=snapshot_8.xml
+ContentType=text/html
+StepName=Custom Request: nav.pl_3
+Total=1
+FileName1=t7.html
+RequestHeaderFile=t7_RequestHeader.txt
+ResponseHeaderFile=t7_ResponseHeader.txt
+RawStepEndTime=1717413377241
+RawStepName=
+RequestBodyFile=t7_RequestBody.txt
+RawStepStartTime=1717413377260
+URL1=http://localhost:1080/cgi-bin/reservations.pl?page=welcome

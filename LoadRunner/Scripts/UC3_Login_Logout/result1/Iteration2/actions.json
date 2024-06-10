@@ -1,0 +1,67 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: welcome.pl",
+                "infFile": "t1.inf",
+                "time": 1715601962244
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Custom Request: nav.pl",
+                "infFile": "t2.inf",
+                "time": 1715601962336
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: login.pl",
+                "infFile": "t3.inf",
+                "time": 1715601962531
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Custom Request: SignOff Button",
+                "infFile": "t6.inf",
+                "time": 1715601962842
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: nav.pl_4",
+                "infFile": "t7.inf",
+                "time": 1715601962941
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "home_page",
+                "rawStartTime": 1715601962052,
+                "rawEndTime": 1715601962368,
+                "thinkTime": 0.0,
+                "wastedTime": 0.023461580276489259
+            },
+            {
+                "transactionName": "Login",
+                "rawStartTime": 1715601962385,
+                "rawEndTime": 1715601962686,
+                "thinkTime": 0.0,
+                "wastedTime": 0.027390241622924806
+            },
+            {
+                "transactionName": "Logout",
+                "rawStartTime": 1715601962718,
+                "rawEndTime": 1715601962956,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02628040313720703
+            },
+            {
+                "transactionName": "UC2_Login_Logout",
+                "rawStartTime": 1715601962036,
+                "rawEndTime": 1715601962972,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0771322250366211
+            }
+        ]
+    }
+]

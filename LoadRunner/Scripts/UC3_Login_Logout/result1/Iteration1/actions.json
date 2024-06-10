@@ -1,0 +1,67 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: welcome.pl",
+                "infFile": "t1.inf",
+                "time": 1715601961330
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: nav.pl",
+                "infFile": "t2.inf",
+                "time": 1715601961430
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Custom Request: login.pl",
+                "infFile": "t3.inf",
+                "time": 1715601961595
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Custom Request: SignOff Button",
+                "infFile": "t6.inf",
+                "time": 1715601961884
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Custom Request: nav.pl_4",
+                "infFile": "t7.inf",
+                "time": 1715601961976
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "home_page",
+                "rawStartTime": 1715601961067,
+                "rawEndTime": 1715601961449,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1008143424987793
+            },
+            {
+                "transactionName": "Login",
+                "rawStartTime": 1715601961465,
+                "rawEndTime": 1715601961736,
+                "thinkTime": 0.0,
+                "wastedTime": 0.013276338577270508
+            },
+            {
+                "transactionName": "Logout",
+                "rawStartTime": 1715601961768,
+                "rawEndTime": 1715601961989,
+                "thinkTime": 0.0,
+                "wastedTime": 0.013827800750732422
+            },
+            {
+                "transactionName": "UC2_Login_Logout",
+                "rawStartTime": 1715601961052,
+                "rawEndTime": 1715601962004,
+                "thinkTime": 0.0,
+                "wastedTime": 0.12791848182678224
+            }
+        ]
+    }
+]

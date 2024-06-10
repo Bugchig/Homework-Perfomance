@@ -1,0 +1,11 @@
+[t11]
+FileName1=t11.htm
+URL1=http://localhost:1080/cgi-bin/reservations.pl
+Total=1
+ContentType=text/html
+SnapshotXmlFile=snapshot_11.xml
+RequestHeaderFile=t11_RequestHeader.txt
+RequestBodyFile=t11_RequestBody.txt
+ResponseHeaderFile=t11_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

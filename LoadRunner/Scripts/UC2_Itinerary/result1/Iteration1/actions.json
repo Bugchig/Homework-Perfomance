@@ -1,0 +1,80 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: welcome.pl",
+                "infFile": "t1.inf",
+                "time": 1715604528742
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Custom Request: nav.pl",
+                "infFile": "t3.inf",
+                "time": 1715604528847
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Custom Request: login.pl",
+                "infFile": "t4.inf",
+                "time": 1715604529009
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Custom Request: Itinerary Button",
+                "infFile": "t7.inf",
+                "time": 1715604529309
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Custom Request: SignOff Button",
+                "infFile": "t10.inf",
+                "time": 1715604529576
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: nav.pl_4",
+                "infFile": "t11.inf",
+                "time": 1715604529673
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "home_page",
+                "rawStartTime": 1715604528421,
+                "rawEndTime": 1715604528850,
+                "thinkTime": 0.0,
+                "wastedTime": 0.13575267791748048
+            },
+            {
+                "transactionName": "Login",
+                "rawStartTime": 1715604528866,
+                "rawEndTime": 1715604529199,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016312837600708009
+            },
+            {
+                "transactionName": "Itinerary",
+                "rawStartTime": 1715604529231,
+                "rawEndTime": 1715604529452,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02033066749572754
+            },
+            {
+                "transactionName": "Logout",
+                "rawStartTime": 1715604529485,
+                "rawEndTime": 1715604529676,
+                "thinkTime": 0.0,
+                "wastedTime": 0.016099929809570314
+            },
+            {
+                "transactionName": "UC2_Itinerary",
+                "rawStartTime": 1715604528406,
+                "rawEndTime": 1715604529692,
+                "thinkTime": 0.0,
+                "wastedTime": 0.18849611282348634
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[t5]
+SnapshotXmlFile=snapshot_5.xml
+ContentType=text/html
+StepName=Custom Request: nav.pl_2
+Total=1
+FileName1=t5.html
+RequestHeaderFile=t5_RequestHeader.txt
+ResponseHeaderFile=t5_ResponseHeader.txt
+RawStepEndTime=1715601962576
+RawStepName=
+RequestBodyFile=t5_RequestBody.txt
+RawStepStartTime=1715601962592
+URL1=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home

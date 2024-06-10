@@ -1,0 +1,2 @@
+"username=benbowinnkeeper&password=rumlover99&passwordConfirm=rumlover99&firstName=Benbow&lastN"
+"ame=Innkeeper&address1=45 Rum Barrel Lane&address2=890123&register.x=51&register.y=5"

@@ -1,4 +1,4 @@
-Virtual User Script started at: 13.05.2024 15:48:48
+Virtual User Script started at: 12.06.2024 12:32:16
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -34,18 +34,20 @@ Action.c(41): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390
 Action.c(47): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
 Action.c(47): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
 Action.c(57): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
-Action.c(57): web_custom_request("nav.pl") was successful, 1481 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(67): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 0,4285 Wasted Time: 0,1358).
+Action.c(57): web_custom_request("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(67): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 0.4378 Wasted Time: 0.1202).
 Action.c(70): Notify: Transaction "Login" started.
 Action.c(72): web_add_header("Origin") started  	[MsgId: MMSG-26355]
 Action.c(72): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
 Action.c(75): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
 Action.c(75): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(78): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(78): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
 Action.c(80): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(80): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Action.c(82): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
 Action.c(82): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
-Action.c(82): web_custom_request("login.pl") was successful, 481 body bytes, 358 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(82): web_custom_request("login.pl") was successful, 481 body bytes, 402 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(93): web_concurrent_start started  	[MsgId: MMSG-26355]
 Action.c(93): web_concurrent_start was successful  	[MsgId: MMSG-26392]
 Action.c(95): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
@@ -53,11 +55,13 @@ Action.c(95): Registering web_custom_request("login.pl_2") was successful  	[Msg
 Action.c(105): web_custom_request("nav.pl_2") started  	[MsgId: MMSG-26355]
 Action.c(105): Registering web_custom_request("nav.pl_2") was successful  	[MsgId: MMSG-26390]
 Action.c(115): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(115): web_concurrent_end was successful, 2400 body bytes, 484 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(117): Notify: Transaction "Login" ended with a "Pass" status (Duration: 0,3329 Wasted Time: 0,0163).
+Action.c(115): web_concurrent_end was successful, 2408 body bytes, 484 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5,3641 Think Time: 5,0062 Wasted Time: 0,0152).
+Action.c(119): Think time - Waiting 5,00 seconds (according to limit).
+Action.c(119): lr_think_time: 5,00 seconds (recorded think time was 72,00 seconds).
 Action.c(121): Notify: Transaction "Itinerary" started.
 Action.c(123): web_custom_request("Itinerary Button") started  	[MsgId: MMSG-26355]
-Action.c(123): web_custom_request("Itinerary Button") was successful, 591 body bytes, 215 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(123): web_custom_request("Itinerary Button") was successful, 591 body bytes, 216 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(133): web_concurrent_start started  	[MsgId: MMSG-26355]
 Action.c(133): web_concurrent_start was successful  	[MsgId: MMSG-26392]
 Action.c(135): web_custom_request("itinerary.pl") started  	[MsgId: MMSG-26355]
@@ -65,18 +69,20 @@ Action.c(135): Registering web_custom_request("itinerary.pl") was successful  	[
 Action.c(145): web_custom_request("nav.pl_3") started  	[MsgId: MMSG-26355]
 Action.c(145): Registering web_custom_request("nav.pl_3") was successful  	[MsgId: MMSG-26390]
 Action.c(155): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(155): web_concurrent_end was successful, 38050 body bytes, 510 header bytes, 87 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(157): Notify: Transaction "Itinerary" ended with a "Pass" status (Duration: 0,2211 Wasted Time: 0,0203).
+Action.c(155): web_concurrent_end was successful, 4134 body bytes, 511 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(157): Notify: Transaction "Itinerary" ended with a "Pass" status (Duration: 0.2308 Wasted Time: 0.0129).
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 52.00 seconds).
 Action.c(161): Notify: Transaction "Logout" started.
 Action.c(163): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(163): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
 Action.c(166): web_custom_request("SignOff Button") started  	[MsgId: MMSG-26355]
 Action.c(166): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
-Action.c(166): web_custom_request("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(166): web_custom_request("SignOff Button") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(176): web_custom_request("nav.pl_4") started  	[MsgId: MMSG-26355]
-Action.c(176): web_custom_request("nav.pl_4") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(186): Notify: Transaction "Logout" ended with a "Pass" status (Duration: 0.1913 Wasted Time: 0.0161).
-Action.c(188): Notify: Transaction "UC2_Itinerary" ended with a "Pass" status (Duration: 1.2860 Wasted Time: 0.1885).
+Action.c(176): web_custom_request("nav.pl_4") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(186): Notify: Transaction "Logout" ended with a "Pass" status (Duration: 0.2014 Wasted Time: 0.0116).
+Action.c(188): Notify: Transaction "UC2_Itinerary" ended with a "Pass" status (Duration: 16.3643 Think Time: 15.0234 Wasted Time: 0.1599).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...

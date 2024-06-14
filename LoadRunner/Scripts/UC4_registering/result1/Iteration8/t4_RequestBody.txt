@@ -1,2 +1,0 @@
-"username=squiretrelawney&password=treasuremap1&passwordConfirm=treasuremap1&firstName=Squire&l"
-"astName=Trelawney&address1=67 Gold Doubloon Drive&address2=456789&register.x=51&register.y=5"

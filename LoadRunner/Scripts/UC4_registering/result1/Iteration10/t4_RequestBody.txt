@@ -1,2 +1,0 @@
-"username=captainflint&password=treasurechest99&passwordConfirm=treasurechest99&firstName=Capta"
-"in&lastName=Flint&address1=10 Hidden Cove Lane&address2=678901&register.x=51&register.y=5"

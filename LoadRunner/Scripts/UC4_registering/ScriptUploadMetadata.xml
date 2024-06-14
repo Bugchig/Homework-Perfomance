@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VugenScriptMetadata>
-  <ScriptName>UC2_registering</ScriptName>
+  <ScriptName>UC4_registering</ScriptName>
   <Protocol>Web - HTTP/HTML</Protocol>
   <ActionFiles>
     <FileEntry Name="vuser_init.c" Filter="2" />
@@ -8,15 +8,14 @@
     <FileEntry Name="vuser_end.c" Filter="2" />
   </ActionFiles>
   <GeneralFiles>
-    <FileEntry Name="UC2_registering.usr" Filter="4" />
+    <FileEntry Name="UC4_registering.usr" Filter="4" />
     <FileEntry Name="default.cfg" Filter="4" />
     <FileEntry Name="default.usp" Filter="4" />
-    <FileEntry Name="UC2_registering.prm" Filter="2" />
+    <FileEntry Name="UC4_registering.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
-    <FileEntry Name="combined_UC2_registering.c" Filter="2" />
+    <FileEntry Name="combined_UC4_registering.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
-    <FileEntry Name="253009202440.idx" Filter="1" />
-    <FileEntry Name="63117286440.idx" Filter="1" />
+    <FileEntry Name="44173734440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -33,9 +32,10 @@
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
-    <FileEntry Name="UC2_registering.c.pickle" Filter="1" />
-    <FileEntry Name="UC2_registering.ci" Filter="1" />
     <FileEntry Name="UC2_registering.prm.bak" Filter="1" />
+    <FileEntry Name="UC4_registering.c.pickle" Filter="1" />
+    <FileEntry Name="UC4_registering.ci" Filter="1" />
+    <FileEntry Name="UC4_registering.prm.bak" Filter="1" />
     <FileEntry Name="userData.dat" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />

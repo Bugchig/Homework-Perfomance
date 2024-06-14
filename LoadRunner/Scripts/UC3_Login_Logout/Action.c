@@ -1,6 +1,6 @@
 Action()
 {
-	lr_start_transaction("UC2_Login_Logout");
+	lr_start_transaction("UC3_Login_Logout");
 
 	
 	
@@ -58,7 +58,7 @@ Action()
 	lr_end_transaction("home_page", LR_AUTO);
 
 
-	lr_start_transaction("Login");
+	lr_start_transaction("login");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
@@ -105,13 +105,13 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("Login",LR_AUTO);
+	lr_end_transaction("login",LR_AUTO);
 
 	lr_think_time(30);
 
 	
 
-	lr_start_transaction("Logout");
+	lr_start_transaction("logout");
 
 	web_revert_auto_header("Origin");
 
@@ -142,9 +142,9 @@ Action()
 		"Mode=HTTP", 
 		LAST);
 
-	lr_end_transaction("Logout",LR_AUTO);
+	lr_end_transaction("logout",LR_AUTO);
 	
-	lr_end_transaction("UC2_Login_Logout", LR_AUTO);
+	lr_end_transaction("UC3_Login_Logout", LR_AUTO);
 
 	
 

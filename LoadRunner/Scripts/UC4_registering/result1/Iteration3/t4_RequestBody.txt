@@ -1,2 +1,0 @@
-"username=captainsmudge&password=shipmate789&passwordConfirm=shipmate789&firstName=Captain&last"
-"Name=Smudge&address1=56 Treasure Island Way&address2=345678&register.x=51&register.y=5"

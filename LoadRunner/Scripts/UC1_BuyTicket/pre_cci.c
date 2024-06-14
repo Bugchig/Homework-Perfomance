@@ -1,4 +1,4 @@
-# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c"
+# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 2 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c" 2
 
 # 1 "globals.h" 1
 
@@ -2593,23 +2593,20 @@ void
  
 
 
-# 3 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 3 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 4 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c" 2
 
 # 1 "Action.c" 1
 Action()
 {
-	lr_save_string("jojo", "login");
 
-	lr_save_string("bean", "password");
-
-	lr_start_transaction("UC2_BuyTicket");
+	lr_start_transaction("UC1_BuyTicket");
 
 	
 	
@@ -2667,7 +2664,7 @@ Action()
 	lr_end_transaction("home_page", 2);
 
 
-	lr_start_transaction("Login");
+	lr_start_transaction("login");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
@@ -2714,11 +2711,11 @@ Action()
 
 	web_concurrent_end(0);
 
-	lr_end_transaction("Login",2);
+	lr_end_transaction("login",2);
 
 	lr_think_time(30);
 
-	lr_start_transaction("Flights");
+	lr_start_transaction("flights");
 	
 	web_reg_find("Text=User has returned to the search page",
 		"LAST");
@@ -2757,9 +2754,9 @@ Action()
 
 	web_concurrent_end(0);
 
-	lr_end_transaction("Flights",2);
+	lr_end_transaction("flights",2);
 
-	lr_start_transaction("Find_Flight");
+	lr_start_transaction("find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
@@ -2794,11 +2791,11 @@ Action()
 		"TargetEncoding=URL",
 		"LAST");
 
-	lr_end_transaction("Find_Flight",2);
+	lr_end_transaction("find_flight",2);
 
 	lr_think_time(18);
 
-	lr_start_transaction("Choice_Flight");
+	lr_start_transaction("choice_flight");
 
 	web_custom_request("reservations.pl_3",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
@@ -2811,11 +2808,11 @@ Action()
 		"Body=outboundFlight={outboundFlight_URL2}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=45&reserveFlights.y=10",
 		"LAST");
 
-	lr_end_transaction("Choice_Flight",2);
+	lr_end_transaction("choice_flight",2);
 
 	lr_think_time(42);
 
-	lr_start_transaction("Payment");
+	lr_start_transaction("payment");
 	
 	web_reg_find("Text/IC= from {depart} to {arrive}",
 		"LAST");
@@ -2831,9 +2828,9 @@ Action()
 		"Body=firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&pass1={firstName}+{lastName}&creditCard={creditCard}&expDate={expDate}&oldCCOption=&numPassengers=1&seatType={seatType}&seatPref={seatPref}&outboundFlight={outboundFlight_URL2}&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights.x=18&buyFlights.y=8&.cgifields=saveCC",
 		"LAST");
 
-	lr_end_transaction("Payment",2);
+	lr_end_transaction("payment",2);
 
-	lr_start_transaction("Logout");
+	lr_start_transaction("logout");
 
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
 
@@ -2864,20 +2861,20 @@ Action()
 		"Mode=HTTP", 
 		"LAST");
 
-	lr_end_transaction("Logout",2);
+	lr_end_transaction("logout",2);
 	
-	lr_end_transaction("UC2_BuyTicket", 2);
+	lr_end_transaction("UC1_BuyTicket", 2);
 
 	
 
 	return 0;
 }
-# 5 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 5 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC2_BuyTicket.c" 2
+# 6 "c:\\users\\user\\documents\\vugen\\scripts\\uc1_buyticket\\\\combined_UC1_BuyTicket.c" 2
 

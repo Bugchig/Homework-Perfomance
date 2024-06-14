@@ -1,6 +1,6 @@
 Action()
 {
-	lr_start_transaction("UC2_Search");
+	lr_start_transaction("UC5_Search");
 
 	
 	
@@ -58,7 +58,7 @@ Action()
 	lr_end_transaction("home_page", LR_AUTO);
 
 
-	lr_start_transaction("Login");
+	lr_start_transaction("login");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
@@ -105,11 +105,11 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("Login",LR_AUTO);
+	lr_end_transaction("login",LR_AUTO);
 
 	lr_think_time(30);
 
-	lr_start_transaction("Flights");
+	lr_start_transaction("flights");
 	
 	web_reg_find("Text=User has returned to the search page",
 		LAST);
@@ -148,9 +148,9 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("Flights",LR_AUTO);
+	lr_end_transaction("flights",LR_AUTO);
 
-	lr_start_transaction("Find_Flight");
+	lr_start_transaction("find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
@@ -185,11 +185,11 @@ Action()
 		"TargetEncoding=URL",
 		LAST);
 
-	lr_end_transaction("Find_Flight",LR_AUTO);
+	lr_end_transaction("find_flight",LR_AUTO);
 
 	lr_think_time(18);
 
-	lr_start_transaction("Choice_Flight");
+	lr_start_transaction("choice_flight");
 
 	web_custom_request("reservations.pl_3",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
@@ -202,11 +202,11 @@ Action()
 		"Body=outboundFlight={outboundFlight_URL2}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=45&reserveFlights.y=10",
 		LAST);
 
-	lr_end_transaction("Choice_Flight",LR_AUTO);
+	lr_end_transaction("choice_flight",LR_AUTO);
 
 	lr_think_time(42);
 
-	lr_start_transaction("Logout");
+	lr_start_transaction("logout");
 
 	web_revert_auto_header("Origin");
 
@@ -237,10 +237,10 @@ Action()
 		"Mode=HTTP", 
 		LAST);
 
-	lr_end_transaction("Logout",LR_AUTO);
+	lr_end_transaction("logout",LR_AUTO);
 	
 	
-	lr_end_transaction("UC2_Search", LR_AUTO);
+	lr_end_transaction("UC5_Search", LR_AUTO);
 
 	
 

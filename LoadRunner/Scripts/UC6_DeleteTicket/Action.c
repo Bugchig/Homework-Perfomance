@@ -4,7 +4,7 @@ Action()
 	int i;
 	
 	
-	lr_start_transaction("Delet_Ticket");
+	lr_start_transaction("UC6_Delete_Ticket");
 
 	
 	
@@ -62,7 +62,7 @@ Action()
 	lr_end_transaction("home_page", LR_AUTO);
 
 
-	lr_start_transaction("Login");
+	lr_start_transaction("login");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
@@ -109,11 +109,11 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("Login",LR_AUTO);
+	lr_end_transaction("login",LR_AUTO);
 
 	lr_think_time(30);
 
-	lr_start_transaction("Itinerary");
+	lr_start_transaction("itinerary");
 
 	web_custom_request("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -198,7 +198,7 @@ Action()
 	lr_output_message(lr_eval_string("{result_string}"));
 	
 	
-	lr_end_transaction("Itinerary",LR_AUTO);
+	lr_end_transaction("itinerary",LR_AUTO);
 
 	lr_start_transaction("delete");
 
@@ -233,7 +233,7 @@ Action()
 
 	lr_think_time(15);
 
-	lr_start_transaction("Logout");
+	lr_start_transaction("logout");
 
 	web_revert_auto_header("Origin");
 
@@ -264,9 +264,9 @@ Action()
 		"Mode=HTTP", 
 		LAST);
 
-	lr_end_transaction("Logout",LR_AUTO);
+	lr_end_transaction("logout",LR_AUTO);
 	
-	lr_end_transaction("Delet_Ticket", LR_AUTO);
+	lr_end_transaction("UC6_Delete_Ticket", LR_AUTO);
 
 	
 

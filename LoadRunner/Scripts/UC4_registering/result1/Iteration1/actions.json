@@ -6,48 +6,55 @@
                 "stepId": "STEP1",
                 "stepName": "Custom Request: welcome.pl",
                 "infFile": "t1.inf",
-                "time": 1715855539853
+                "time": 1718347863438
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Custom Request: nav.pl",
                 "infFile": "t2.inf",
-                "time": 1715855539930
+                "time": 1718347863549
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Custom Request: login.pl",
                 "infFile": "t3.inf",
-                "time": 1715855540048
+                "time": 1718347863688
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Custom Request: login.pl_2",
                 "infFile": "t4.inf",
-                "time": 1715855540228
+                "time": 1718347863850
             }
         ],
         "transactions": [
             {
-                "transactionName": "Sign_up",
-                "rawStartTime": 1715855539944,
-                "rawEndTime": 1715855540055,
+                "transactionName": "home_page",
+                "rawStartTime": 1718347863099,
+                "rawEndTime": 1718347863564,
                 "thinkTime": 0.0,
-                "wastedTime": 0.012243270874023438
+                "wastedTime": 0.11317610740661621
             },
             {
-                "transactionName": "customer_Profile",
-                "rawStartTime": 1715855540071,
-                "rawEndTime": 1715855540243,
+                "transactionName": "sign_up",
+                "rawStartTime": 1718347863580,
+                "rawEndTime": 1718347863707,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0052280426025390629
+                "wastedTime": 0.004880666732788086
             },
             {
-                "transactionName": "registering",
-                "rawStartTime": 1715855539549,
-                "rawEndTime": 1715855540259,
+                "transactionName": "customer_profile",
+                "rawStartTime": 1718347863723,
+                "rawEndTime": 1718347863855,
                 "thinkTime": 0.0,
-                "wastedTime": 0.11732983589172363
+                "wastedTime": 0.0068929195404052738
+            },
+            {
+                "transactionName": "UC4_registering",
+                "rawStartTime": 1718347863080,
+                "rawEndTime": 1718347863862,
+                "thinkTime": 0.0,
+                "wastedTime": 0.12494969367980957
             }
         ]
     }

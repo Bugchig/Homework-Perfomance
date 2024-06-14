@@ -1,7 +1,7 @@
 Action()
 {
 
-	lr_start_transaction("UC2_BuyTicket");
+	lr_start_transaction("UC1_BuyTicket");
 
 	
 	
@@ -59,7 +59,7 @@ Action()
 	lr_end_transaction("home_page", LR_AUTO);
 
 
-	lr_start_transaction("Login");
+	lr_start_transaction("login");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
@@ -106,11 +106,11 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("Login",LR_AUTO);
+	lr_end_transaction("login",LR_AUTO);
 
 	lr_think_time(30);
 
-	lr_start_transaction("Flights");
+	lr_start_transaction("flights");
 	
 	web_reg_find("Text=User has returned to the search page",
 		LAST);
@@ -149,9 +149,9 @@ Action()
 
 	web_concurrent_end(NULL);
 
-	lr_end_transaction("Flights",LR_AUTO);
+	lr_end_transaction("flights",LR_AUTO);
 
-	lr_start_transaction("Find_Flight");
+	lr_start_transaction("find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
@@ -186,11 +186,11 @@ Action()
 		"TargetEncoding=URL",
 		LAST);
 
-	lr_end_transaction("Find_Flight",LR_AUTO);
+	lr_end_transaction("find_flight",LR_AUTO);
 
 	lr_think_time(18);
 
-	lr_start_transaction("Choice_Flight");
+	lr_start_transaction("choice_flight");
 
 	web_custom_request("reservations.pl_3",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
@@ -203,11 +203,11 @@ Action()
 		"Body=outboundFlight={outboundFlight_URL2}&numPassengers=1&advanceDiscount=0&seatType={seatType}&seatPref={seatPref}&reserveFlights.x=45&reserveFlights.y=10",
 		LAST);
 
-	lr_end_transaction("Choice_Flight",LR_AUTO);
+	lr_end_transaction("choice_flight",LR_AUTO);
 
 	lr_think_time(42);
 
-	lr_start_transaction("Payment");
+	lr_start_transaction("payment");
 	
 	web_reg_find("Text/IC= from {depart} to {arrive}",
 		LAST);
@@ -223,9 +223,9 @@ Action()
 		"Body=firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&pass1={firstName}+{lastName}&creditCard={creditCard}&expDate={expDate}&oldCCOption=&numPassengers=1&seatType={seatType}&seatPref={seatPref}&outboundFlight={outboundFlight_URL2}&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlights.x=18&buyFlights.y=8&.cgifields=saveCC",
 		LAST);
 
-	lr_end_transaction("Payment",LR_AUTO);
+	lr_end_transaction("payment",LR_AUTO);
 
-	lr_start_transaction("Logout");
+	lr_start_transaction("logout");
 
 	web_revert_auto_header("Origin");
 
@@ -256,9 +256,9 @@ Action()
 		"Mode=HTTP", 
 		LAST);
 
-	lr_end_transaction("Logout",LR_AUTO);
+	lr_end_transaction("logout",LR_AUTO);
 	
-	lr_end_transaction("UC2_BuyTicket", LR_AUTO);
+	lr_end_transaction("UC1_BuyTicket", LR_AUTO);
 
 	
 

@@ -1,2 +1,0 @@
-"username=blackdog&password=booty123&passwordConfirm=booty123&firstName=Black&lastName=Dog&addr"
-"ess1=78 Buccaneer Blvd&address2=901234&register.x=51&register.y=5"

@@ -1,2 +1,0 @@
-"username=blindpew&password=treasurehunt1&passwordConfirm=treasurehunt1&firstName=Blind&lastNam"
-"e=Pew&address1=23 X Marks the Spot Lane&address2=234567&register.x=51&register.y=5"

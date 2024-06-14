@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VugenScriptMetadata>
-  <ScriptName>UC2_Login_Logout</ScriptName>
+  <ScriptName>UC3_Login_Logout</ScriptName>
   <Protocol>Web - HTTP/HTML</Protocol>
   <ActionFiles>
     <FileEntry Name="vuser_init.c" Filter="2" />
@@ -8,17 +8,12 @@
     <FileEntry Name="vuser_end.c" Filter="2" />
   </ActionFiles>
   <GeneralFiles>
-    <FileEntry Name="UC2_Login_Logout.usr" Filter="4" />
+    <FileEntry Name="UC3_Login_Logout.usr" Filter="4" />
     <FileEntry Name="default.cfg" Filter="4" />
     <FileEntry Name="default.usp" Filter="4" />
     <FileEntry Name="DfeConfig\" Filter="4" />
-    <FileEntry Name="UC2_Login_Logout.prm" Filter="2" />
+    <FileEntry Name="UC3_Login_Logout.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
-    <FileEntry Name="combined_UC2_Login_Logout.c" Filter="2" />
-    <FileEntry Name="pre_cci.c" Filter="2" />
-    <FileEntry Name="25282185440.idx" Filter="1" />
-    <FileEntry Name="32419231440.idx" Filter="1" />
-    <FileEntry Name="4228508440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="cities.dat" Filter="1" />
@@ -38,9 +33,8 @@
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC2_BuyTicket.prm.bak" Filter="1" />
-    <FileEntry Name="UC2_Login_Logout.c.pickle" Filter="1" />
-    <FileEntry Name="UC2_Login_Logout.ci" Filter="1" />
     <FileEntry Name="UC2_Login_Logout.prm.bak" Filter="1" />
+    <FileEntry Name="UC3_Login_Logout.prm.bak" Filter="1" />
     <FileEntry Name="userData.dat" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="data\" Filter="1" />

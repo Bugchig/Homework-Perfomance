@@ -1,6 +1,8 @@
 Action()
 {
-lr_start_transaction("registering");
+lr_start_transaction("UC4_registering");
+
+lr_start_transaction("home_page");
 
 	/*Possible OAUTH authorization was detected. It is recommended to correlate the authorization parameters.*/
 
@@ -55,8 +57,10 @@ lr_start_transaction("registering");
 		"Snapshot=t2.inf", 
 		"Mode=HTTP", 
 		LAST);
+	
+	lr_end_transaction("home_page",LR_AUTO);
 
-	lr_start_transaction("Sign_up");
+	lr_start_transaction("sign_up");
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
@@ -73,15 +77,15 @@ lr_start_transaction("registering");
 		"Mode=HTTP", 
 		LAST);
 
-	lr_end_transaction("Sign_up",LR_AUTO);
+	lr_end_transaction("sign_up",LR_AUTO);
 
-	lr_start_transaction("customer_Profile");
+	lr_start_transaction("customer_profile");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
 	lr_think_time(59);
-	web_reg_find("Text=Thank you, <b>{Login}</b>, for registering",
+	web_reg_find("Text=Thank you, <b>{Login}{rnd}</b>, for registering and welcome to the Web Tours family.",
 		LAST);
 	
 
@@ -93,11 +97,11 @@ lr_start_transaction("registering");
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
 		"Snapshot=t4.inf", 
 		"Mode=HTTP", 
-		"Body=username={Login}&password={password}&passwordConfirm={password}&firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&register.x=51&register.y=5", 
+		"Body=username={Login}{rnd}&password={password}&passwordConfirm={password}&firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&register.x=51&register.y=5", 
 		LAST);
 
-	lr_end_transaction("customer_Profile",LR_AUTO);
-	lr_end_transaction("registering", LR_AUTO);
+	lr_end_transaction("customer_profile",LR_AUTO);
+	lr_end_transaction("UC4_registering", LR_AUTO);
 
 
 	return 0;

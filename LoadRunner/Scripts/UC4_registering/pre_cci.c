@@ -1,4 +1,4 @@
-# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c"
+# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c" 2
+# 1 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c" 2
+# 2 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c" 2
 
 # 1 "globals.h" 1
 
@@ -2594,19 +2594,21 @@ void
  
 
 
-# 3 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c" 2
+# 3 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c" 2
+# 4 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c" 2
 
 # 1 "Action.c" 1
 Action()
 {
-lr_start_transaction("registering");
+lr_start_transaction("UC4_registering");
+
+lr_start_transaction("home_page");
 
 	 
 
@@ -2661,8 +2663,10 @@ lr_start_transaction("registering");
 		"Snapshot=t2.inf", 
 		"Mode=HTTP", 
 		"LAST");
+	
+	lr_end_transaction("home_page",2);
 
-	lr_start_transaction("Sign_up");
+	lr_start_transaction("sign_up");
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
@@ -2679,15 +2683,15 @@ lr_start_transaction("registering");
 		"Mode=HTTP", 
 		"LAST");
 
-	lr_end_transaction("Sign_up",2);
+	lr_end_transaction("sign_up",2);
 
-	lr_start_transaction("customer_Profile");
+	lr_start_transaction("customer_profile");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
 	lr_think_time(59);
-	web_reg_find("Text=Thank you, <b>{Login}</b>, for registering",
+	web_reg_find("Text=Thank you, <b>{Login}{rnd}</b>, for registering and welcome to the Web Tours family.",
 		"LAST");
 	
 
@@ -2699,21 +2703,21 @@ lr_start_transaction("registering");
 		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
 		"Snapshot=t4.inf", 
 		"Mode=HTTP", 
-		"Body=username={Login}&password={password}&passwordConfirm={password}&firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&register.x=51&register.y=5", 
+		"Body=username={Login}{rnd}&password={password}&passwordConfirm={password}&firstName={firstName}&lastName={lastName}&address1={address1}&address2={address2}&register.x=51&register.y=5", 
 		"LAST");
 
-	lr_end_transaction("customer_Profile",2);
-	lr_end_transaction("registering", 2);
+	lr_end_transaction("customer_profile",2);
+	lr_end_transaction("UC4_registering", 2);
 
 
 	return 0;
 }
-# 5 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c" 2
+# 5 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\user\\documents\\vugen\\scripts\\uc2_registering\\\\combined_UC2_registering.c" 2
+# 6 "c:\\users\\user\\documents\\vugen\\scripts\\uc4_registering\\\\combined_UC4_registering.c" 2
 

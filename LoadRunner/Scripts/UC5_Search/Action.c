@@ -55,8 +55,10 @@ Action()
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
 	
-	lr_end_transaction("home_page", LR_AUTO);
-
+	
+    lr_end_transaction("home_page", LR_AUTO);
+    
+    lr_think_time(33);
 
 	lr_start_transaction("login");
 
@@ -66,7 +68,6 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
-	lr_think_time(33);
 	
 	web_reg_find("Text=User password was correct",LAST);
 
@@ -149,13 +150,14 @@ Action()
 	web_concurrent_end(NULL);
 
 	lr_end_transaction("flights",LR_AUTO);
+	
+	lr_think_time(42);
 
 	lr_start_transaction("find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(42);
 	web_reg_find("Text/IC= from <B>{depart}</B> to <B>{arrive}</B>",
 		LAST);
 
@@ -205,41 +207,45 @@ Action()
 	lr_end_transaction("choice_flight",LR_AUTO);
 
 	lr_think_time(42);
-
-	lr_start_transaction("logout");
-
-	web_revert_auto_header("Origin");
-
-	lr_think_time(9);
 	
-	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
-		LAST);
+	lr_start_transaction("itinerary");
 
-	
-
-	web_custom_request("SignOff Button", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
+	web_custom_request("Itinerary Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"Method=GET", 
 		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
-		"Snapshot=t12.inf", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t6.inf", 
 		"Mode=HTTP", 
 		LAST);
 
-	web_custom_request("nav.pl_4", 
-		"URL=http://localhost:1080/cgi-bin/nav.pl?in=home", 
+	web_concurrent_start(NULL);
+
+	web_custom_request("itinerary.pl", 
+		"URL=http://localhost:1080/cgi-bin/itinerary.pl", 
 		"Method=GET", 
 		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"Snapshot=t13.inf", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"Snapshot=t7.inf", 
 		"Mode=HTTP", 
 		LAST);
 
-	lr_end_transaction("logout",LR_AUTO);
-	
-	
+	web_custom_request("nav.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"Snapshot=t8.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_concurrent_end(NULL);
+
+	lr_end_transaction("itinerary",LR_AUTO);
+		
 	lr_end_transaction("UC5_Search", LR_AUTO);
 
 	

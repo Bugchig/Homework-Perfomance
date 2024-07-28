@@ -57,6 +57,7 @@ Action()
 	
 	lr_end_transaction("home_page", LR_AUTO);
 
+	lr_think_time(33);
 
 	lr_start_transaction("login");
 
@@ -65,8 +66,6 @@ Action()
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
-
-	lr_think_time(33);
 	
 	web_reg_find("Text=User password was correct",LAST);
 
@@ -108,14 +107,53 @@ Action()
 	lr_end_transaction("login",LR_AUTO);
 
 	lr_think_time(30);
-
+lr_start_transaction("flights");
 	
+	web_reg_find("Text=User has returned to the search page",
+		LAST);
+
+	web_custom_request("Search Flights Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t6.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_concurrent_start(NULL);
+
+	web_custom_request("reservations.pl", 
+		"URL=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Snapshot=t7.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_custom_request("nav.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=search", 
+		"Snapshot=t8.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_concurrent_end(NULL);
+
+	lr_end_transaction("flights",LR_AUTO);
+	
+	lr_think_time(9);
 
 	lr_start_transaction("logout");
 
 	web_revert_auto_header("Origin");
 
-	lr_think_time(9);
 	
 	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
 		LAST);

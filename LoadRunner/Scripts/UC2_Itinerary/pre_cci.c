@@ -2672,7 +2672,7 @@ Action()
 	lr_end_transaction("home_page", 2);
 
 
-	lr_start_transaction("Login");
+	lr_start_transaction("login");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
@@ -2719,11 +2719,11 @@ Action()
 
 	web_concurrent_end(0);
 
-	lr_end_transaction("Login",2);
+	lr_end_transaction("login",2);
 
 	lr_think_time(72);
 
-	lr_start_transaction("Itinerary");
+	lr_start_transaction("itinerary");
 
 	web_custom_request("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -2759,11 +2759,11 @@ Action()
 
 	web_concurrent_end(0);
 
-	lr_end_transaction("Itinerary",2);
+	lr_end_transaction("itinerary",2);
 
 	lr_think_time(52);
 
-	lr_start_transaction("Logout");
+	lr_start_transaction("logout");
 	
 	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
 		"LAST");
@@ -2788,7 +2788,7 @@ Action()
 		"Mode=HTTP", 
 		"LAST");
 
-	lr_end_transaction("Logout",2);
+	lr_end_transaction("logout",2);
 	
 	lr_end_transaction("UC2_Itinerary", 2);
 

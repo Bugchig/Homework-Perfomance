@@ -1,0 +1,37 @@
+Start auto log messages stack - Iteration 15.	[MsgId: MMSG-10545]
+Action.c(46): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(51): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(51): web_custom_request("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(61): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 0,1344 Wasted Time: 0,0000).	[MsgId: MMSG-16871]
+Action.c(63): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(63): lr_think_time: 5,00 seconds (recorded think time was 13,00 seconds).	[MsgId: MMSG-15947]
+Action.c(65): Notify: Transaction "sign_up" started.	[MsgId: MMSG-16999]
+Action.c(67): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(67): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(71): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(71): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 85.	[MsgId: MMSG-10545]
+Action.c(71): web_custom_request("login.pl") was successful, 2429 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(81): Notify: Transaction "sign_up" ended with a "Pass" status (Duration: 0,0422).	[MsgId: MMSG-16873]
+Action.c(83): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(83): lr_think_time: 5,00 seconds (recorded think time was 59,00 seconds).	[MsgId: MMSG-15947]
+Action.c(85): Notify: Transaction "customer_profile" started.	[MsgId: MMSG-16999]
+Action.c(87): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(87): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(90): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(90): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(94): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(94): Error -27721: Step download timeout (120 seconds) has expired when downloading resource "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MERR-27721]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 85.	[MsgId: MMSG-10545]
+Action.c(94): Aborting pending download of URL="http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=676)  	[MsgId: MMSG-27649]
+Action.c(94): Error -26366: "Text=Thank you, <b>drlivesey58188379</b>, for registering and welcome to the Web Tours family." not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(94): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

@@ -1,2 +1,2 @@
-"userSession=139180.618631025HVfQVADpAHAiDDDDtcQftpzVitcf&username=captainflint&password=treasu"
-"rechest99&login.x=69&login.y=10&JSFormSubmit=off"
+"userSession=139286.171486432HVztfDcpttfiDDDDtcQiHpVQtzHf&username=benbowinnkeeper&password=rum"
+"lover99&login.x=69&login.y=10&JSFormSubmit=off"

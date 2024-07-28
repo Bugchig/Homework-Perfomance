@@ -58,7 +58,7 @@ Action()
 	
 	lr_end_transaction("home_page", LR_AUTO);
 
-
+    lr_think_time(33);
 	lr_start_transaction("login");
 
 	web_add_header("Origin", 
@@ -67,7 +67,6 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
-	lr_think_time(33);
 	
 	web_reg_find("Text=User password was correct",LAST);
 
@@ -150,24 +149,39 @@ Action()
 	web_concurrent_end(NULL);
 
 	lr_end_transaction("flights",LR_AUTO);
-
+    
+	lr_think_time(42);
+	
 	lr_start_transaction("find_flight");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(42);
+	
 	web_reg_find("Text/IC= from <B>{depart}</B> to <B>{arrive}</B>",
 		LAST);
 
 /*Correlation comment - Do not change!  Original value='340;438;05/07/2024' Name ='outboundFlight' Type ='RecordReplay'*/
-	web_reg_save_param_attrib(
-		"ParamName=outboundFlight",
-		"TagName=input",
-		"Extract=value",
-		"Name=outboundFlight",
-		"Type=radio",
+
+	web_reg_save_param("outboundFlight",
+		"LB=name=\"outboundFlight\" value=\"",
+		"RB=\"",
+		"Ord=ALL",
 		LAST);
+		
+		web_reg_save_param("outboundFlight",
+		"LB=name=\"outboundFlight\" value=\"",
+		"RB=\"",
+		"Ord=random",
+		LAST);
+
+	//web_reg_save_param_attrib(
+	//	"ParamName=outboundFlight",
+	//	"TagName=input",
+	//	"Extract=value",
+	//	"Name=outboundFlight",
+	//	"Type=radio",
+	//	LAST);
 
 	web_custom_request("reservations.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -179,6 +193,8 @@ Action()
 		"Mode=HTTP", 
 		"Body=advanceDiscount=0&depart={depart}&departDate={departDate}&arrive={arrive}&returnDate={returnDate}&numPassengers=1&seatPref={seatPref}&seatType={seatType}&findFlights.x=24&findFlights.y=7&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref", 
 		LAST);
+	
+	lr_save_string(lr_paramarr_random("outboundFlight"),"outboundFlightRandom");
 
 	web_convert_param("outboundFlight_URL2",
 		"SourceString={outboundFlight}",
@@ -191,7 +207,9 @@ Action()
 	lr_think_time(18);
 
 	lr_start_transaction("choice_flight");
-
+	
+	
+	
 	web_custom_request("reservations.pl_3",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
 		"Method=POST",
@@ -224,12 +242,14 @@ Action()
 		LAST);
 
 	lr_end_transaction("payment",LR_AUTO);
+	
+	lr_think_time(9);
 
 	lr_start_transaction("logout");
 
 	web_revert_auto_header("Origin");
 
-	lr_think_time(9);
+	
 	
 	web_reg_find("Text=A Session ID has been created and loaded into a cookie called MSO",
 		LAST);

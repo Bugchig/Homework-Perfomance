@@ -6,8 +6,8 @@ Total=1
 FileName1=t6.html
 RequestHeaderFile=t6_RequestHeader.txt
 ResponseHeaderFile=t6_ResponseHeader.txt
-RawStepEndTime=1718184742537
+RawStepEndTime=1719487793454
 RawStepName=
 RequestBodyFile=t6_RequestBody.txt
-RawStepStartTime=1718184742554
+RawStepStartTime=1719487793469
 URL1=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home

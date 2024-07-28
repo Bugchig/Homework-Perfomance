@@ -2707,6 +2707,55 @@ lr_start_transaction("home_page");
 		"LAST");
 
 	lr_end_transaction("customer_profile",2);
+	
+	lr_start_transaction("continue");
+	
+	web_custom_request("welcome.pl_2", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/login.pl", 
+		"Snapshot=t5.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_custom_request("welcome.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/login.pl", 
+		"Snapshot=t6.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_concurrent_start(0);
+
+	web_custom_request("nav.pl_2", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Snapshot=t7.inf", 
+		"Mode=HTTP", 
+		"LAST");
+
+	web_custom_request("login.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Snapshot=t8.inf", 
+		"Mode=HTTP", 
+		"LAST");
+	
+	web_concurrent_end(0);
+
+	lr_end_transaction("continue", 2);
+	
 	lr_end_transaction("UC4_registering", 2);
 
 

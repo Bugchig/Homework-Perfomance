@@ -1,0 +1,28 @@
+Start auto log messages stack - Iteration 14.	[MsgId: MMSG-10545]
+Action.c(201): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,4189 Wasted Time: 0,0004).	[MsgId: MMSG-16871]
+Action.c(203): Notify: Transaction "delete" started.	[MsgId: MMSG-16999]
+Action.c(205): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(205): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(208): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(208): lr_think_time: 5,00 seconds (recorded think time was 55,00 seconds).	[MsgId: MMSG-15947]
+Action.c(211): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(211): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(218): Error -26368: "Text=210321117-781-BD" found for web_reg_find (count=1)  	[MsgId: MERR-26368]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+
+Start auto log messages stack - Iteration 22.	[MsgId: MMSG-10545]
+Action.c(201): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0,4248 Wasted Time: 0,0002).	[MsgId: MMSG-16871]
+Action.c(203): Notify: Transaction "delete" started.	[MsgId: MMSG-16999]
+Action.c(205): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(205): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(208): Think time - Waiting 5,00 seconds (according to limit).	[MsgId: MMSG-15946]
+Action.c(208): lr_think_time: 5,00 seconds (recorded think time was 55,00 seconds).	[MsgId: MMSG-15947]
+Action.c(211): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(211): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(218): Error -26368: "Text=210321117-781-BD" found for web_reg_find (count=1)  	[MsgId: MERR-26368]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

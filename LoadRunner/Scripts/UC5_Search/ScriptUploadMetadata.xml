@@ -14,6 +14,23 @@
     <FileEntry Name="DfeConfig\" Filter="4" />
     <FileEntry Name="UC5_Search.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="combined_UC5_Search.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="22206152440.idx" Filter="1" />
+    <FileEntry Name="2220615244_a2l.219.idx" Filter="1" />
+    <FileEntry Name="2220615244_mSQ.475.idx" Filter="1" />
+    <FileEntry Name="2220615244_N2I.335.idx" Filter="1" />
+    <FileEntry Name="2220615244_U0Z.821.idx" Filter="1" />
+    <FileEntry Name="24501864440.idx" Filter="1" />
+    <FileEntry Name="2450186444_4Tl.473.idx" Filter="1" />
+    <FileEntry Name="2450186444_BiE.333.idx" Filter="1" />
+    <FileEntry Name="2450186444_bjZ.819.idx" Filter="1" />
+    <FileEntry Name="2450186444_R8D.217.idx" Filter="1" />
+    <FileEntry Name="72635157440.idx" Filter="1" />
+    <FileEntry Name="7263515744_2FU.474.idx" Filter="1" />
+    <FileEntry Name="7263515744_gtA.820.idx" Filter="1" />
+    <FileEntry Name="7263515744_MUp.218.idx" Filter="1" />
+    <FileEntry Name="7263515744_nEI.334.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="cities.dat" Filter="1" />
@@ -22,6 +39,11 @@
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv0HJ.883.log" Filter="1" />
+    <FileEntry Name="mdrv8om.537.log" Filter="1" />
+    <FileEntry Name="mdrvatc.13.log" Filter="1" />
+    <FileEntry Name="mdrvJXT.317.log" Filter="1" />
+    <FileEntry Name="mdrvpkn.907.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
@@ -34,6 +56,8 @@
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC2_BuyTicket.prm.bak" Filter="1" />
     <FileEntry Name="UC2_Search.prm.bak" Filter="1" />
+    <FileEntry Name="UC5_Search.c.pickle" Filter="1" />
+    <FileEntry Name="UC5_Search.ci" Filter="1" />
     <FileEntry Name="UC5_Search.prm.bak" Filter="1" />
     <FileEntry Name="userData.dat" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />

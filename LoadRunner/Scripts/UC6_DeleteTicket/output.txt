@@ -1,4 +1,4 @@
-Virtual User Script started at: 05.06.2024 21:37:51
+Virtual User Script started at: 14.06.2024 23:05:36
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -9,90 +9,87 @@ Running Vuser...
 Starting iteration 1.
 Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
 Starting action Action.
-Action.c(10): Notify: Transaction "UC2_BuyTicket" started.
-Action.c(14): Notify: Transaction "home_page" started.
-Action.c(17): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
-Action.c(17): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
-Action.c(20): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
-Action.c(20): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
-Action.c(23): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
-Action.c(23): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
-Action.c(26): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-Action.c(26): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-Action.c(29): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
-Action.c(29): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
-Action.c(32): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
-Action.c(32): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
-Action.c(35): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
-Action.c(35): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
-Action.c(38): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
-Action.c(38): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(47): web_reg_save_param started  	[MsgId: MMSG-26355]
-Action.c(47): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-Action.c(53): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
-Action.c(53): web_custom_request("nav.pl") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(63): web_set_sockets_option started  	[MsgId: MMSG-26355]
-Action.c(63): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-Action.c(65): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 0.2703 Wasted Time: 0.1013).
-Action.c(68): Notify: Transaction "Login" started.
-Action.c(70): web_add_header("Origin") started  	[MsgId: MMSG-26355]
-Action.c(70): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
-Action.c(73): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-Action.c(73): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(80): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
-Action.c(80): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
-Action.c(80): web_custom_request("login.pl") was successful, 481 body bytes, 358 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(91): web_concurrent_start started  	[MsgId: MMSG-26355]
-Action.c(91): web_concurrent_start was successful  	[MsgId: MMSG-26392]
-Action.c(93): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(93): Registering web_custom_request("login.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(103): web_custom_request("nav.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(103): Registering web_custom_request("nav.pl_2") was successful  	[MsgId: MMSG-26390]
-Action.c(113): web_concurrent_end started  	[MsgId: MMSG-26355]
-Action.c(113): web_concurrent_end was successful, 2400 body bytes, 484 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(115): Notify: Transaction "Login" ended with a "Pass" status (Duration: 0.1769 Wasted Time: 0.0155).
-Action.c(119): Notify: Transaction "Itinerary" started.
-Action.c(121): web_custom_request("Itinerary Button") started  	[MsgId: MMSG-26355]
-Action.c(121): web_custom_request("Itinerary Button") was successful, 591 body bytes, 215 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(133): web_custom_request("nav.pl_3") started  	[MsgId: MMSG-26355]
-Action.c(133): web_custom_request("nav.pl_3") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(147): web_reg_save_param started  	[MsgId: MMSG-26355]
-Action.c(147): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-Action.c(157): web_reg_save_param started  	[MsgId: MMSG-26355]
-Action.c(157): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-Action.c(164): web_custom_request("itinerary.pl") started  	[MsgId: MMSG-26355]
-Action.c(164): web_custom_request("itinerary.pl") was successful, 9517 body bytes, 255 header bytes, 27 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(175): 7
-Action.c(176): 7
-Action.c(196): 1=on&flightID=210297060-818-BD&flightID=86864474-1601-CF&flightID=1280118572-23188-JH&flightID=292223728-3127-BP&flightID=4556319-3895-DL&flightID=86864460-4649-CF&flightID=2834933387-53957-LJ&
-Action.c(197): &cgifields=6&cgifields=4&cgifields=1&cgifields=3&cgifields=7&cgifields=2&cgifields=5
-Action.c(201): 1=on&flightID=210297060-818-BD&flightID=86864474-1601-CF&flightID=1280118572-23188-JH&flightID=292223728-3127-BP&flightID=4556319-3895-DL&flightID=86864460-4649-CF&flightID=2834933387-53957-LJ&removeFlights.x=36&removeFlights.y=4&cgifields=6&cgifields=4&cgifields=1&cgifields=3&cgifields=7&cgifields=2&cgifields=5
-Action.c(204): Notify: Transaction "Itinerary" ended with a "Pass" status (Duration: 0.3679 Wasted Time: 0.0237).
-Action.c(206): Notify: Transaction "delete" started.
-Action.c(208): web_add_header("Origin") started  	[MsgId: MMSG-26355]
-Action.c(208): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
-Action.c(214): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(214): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(221): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
-Action.c(221): Registered web_reg_find successful for "Text=210297060-818-BD"  	[MsgId: MMSG-26362]
-Action.c(221): web_custom_request("itinerary.pl_2") was successful, 8385 body bytes, 255 header bytes, 27 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(232): 7
-Action.c(235): Notify: Transaction "delete" ended with a "Pass" status (Duration: 0,1127 Wasted Time: 0,0086).
-Action.c(239): Notify: Transaction "Logout" started.
-Action.c(241): web_remove_auto_header("Origin") started  	[MsgId: MMSG-26355]
-Action.c(241): Warning -26590: web_remove/revert_auto_header for "Origin" had no effect  	[MsgId: MWAR-26590]
-Action.c(241): web_remove/revert_auto_header("Origin") highest severity level was "warning"  	[MsgId: MMSG-26391]
-Action.c(245): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(245): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(250): web_custom_request("SignOff Button") started  	[MsgId: MMSG-26355]
-Action.c(250): Registered web_reg_find successful for "Text=A Session ID has been created and loaded into a cookie called MSO" (count=1)  	[MsgId: MMSG-26364]
-Action.c(250): web_custom_request("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(260): web_custom_request("nav.pl_4") started  	[MsgId: MMSG-26355]
-Action.c(260): web_custom_request("nav.pl_4") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(270): Notify: Transaction "Logout" ended with a "Pass" status (Duration: 0,1828 Wasted Time: 0,0154).
-Action.c(272): Notify: Transaction "UC2_BuyTicket" ended with a "Pass" status (Duration: 1,1269 Wasted Time: 0,1645).
+Action.c(7): Notify: Transaction "UC6_Delete_Ticket" started.
+Action.c(11): Notify: Transaction "home_page" started.
+Action.c(14): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(14): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(17): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(17): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(20): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(20): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(23): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(23): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(26): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(26): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(29): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(29): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(32): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(32): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_custom_request("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("welcome.pl") was successful, 686 body bytes, 328 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(44): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(44): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_custom_request("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(50): web_custom_request("nav.pl") was successful, 1481 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(60): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(60): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(62): Notify: Transaction "home_page" ended with a "Pass" status (Duration: 0.4227 Wasted Time: 0.0954).
+Action.c(65): Notify: Transaction "login" started.
+Action.c(67): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(67): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(70): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(70): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(73): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(73): lr_think_time: 5.00 seconds (recorded think time was 33.00 seconds).
+Action.c(75): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(75): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(77): web_custom_request("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(77): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
+Action.c(77): web_custom_request("login.pl") was successful, 481 body bytes, 391 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(88): web_concurrent_start started  	[MsgId: MMSG-26355]
+Action.c(88): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(90): web_custom_request("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(90): Registering web_custom_request("login.pl_2") was successful  	[MsgId: MMSG-26390]
+Action.c(100): web_custom_request("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(100): Registering web_custom_request("nav.pl_2") was successful  	[MsgId: MMSG-26390]
+Action.c(110): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(110): web_concurrent_end was successful, 2406 body bytes, 484 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(112): Notify: Transaction "login" ended with a "Pass" status (Duration: 5.2963 Think Time: 5.0149 Wasted Time: 0.0149).
+Action.c(114): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(114): lr_think_time: 5.00 seconds (recorded think time was 30.00 seconds).
+Action.c(116): Notify: Transaction "itinerary" started.
+Action.c(118): web_custom_request("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(118): web_custom_request("Itinerary Button") was successful, 591 body bytes, 216 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(130): web_custom_request("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(130): web_custom_request("nav.pl_3") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(144): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(144): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(154): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(154): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(161): web_custom_request("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): web_custom_request("itinerary.pl") was successful, 4916 body bytes, 255 header bytes, 19 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(172): 3
+Action.c(173): 3
+Action.c(193): 1=on&flightID=128000764-818-JH&flightID=128000764-1587-JH&flightID=1280363037-23231-JH&
+Action.c(194): &cgifields=1&cgifields=3&cgifields=2
+Action.c(198): 1=on&flightID=128000764-818-JH&flightID=128000764-1587-JH&flightID=1280363037-23231-JH&removeFlights.x=36&removeFlights.y=4&cgifields=1&cgifields=3&cgifields=2
+Action.c(201): Notify: Transaction "itinerary" ended with a "Pass" status (Duration: 0.6810 Wasted Time: 0.0174).
+Action.c(203): Notify: Transaction "delete" started.
+Action.c(205): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(205): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(208): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(208): lr_think_time: 5.00 seconds (recorded think time was 55.00 seconds).
+Action.c(211): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(211): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_custom_request("itinerary.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(218): Error -26368: "Text=128000764-818-JH" found for web_reg_find (count=1)  	[MsgId: MERR-26368]
+Action.c(218): web_custom_request("itinerary.pl_2") highest severity level was "ERROR", 3776 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26387]
+Action.c(218): Notify: Transaction "delete" ended with a "Fail" status (Duration: 5.1575 Think Time: 5.0057 Wasted Time: 0.0066).
+Action.c(218): Notify: Transaction "delete" has 1 error message(s).
+Action.c(218): Notify: The 1st error message associated with transaction "delete" is "Error -26368: "Text=128000764-818-JH" found for web_reg_find (count=1)"
+Action.c(218): Notify: Transaction "UC6_Delete_Ticket" ended with a "Fail" status (Duration: 16.6413 Think Time: 15.0251 Wasted Time: 0.1343).
+Action.c(218): Notify: Transaction "UC6_Delete_Ticket" has 1 error message(s).
+Action.c(218): Notify: The 1st error message associated with transaction "UC6_Delete_Ticket" is "Error -26368: "Text=128000764-818-JH" found for web_reg_find (count=1)"
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...

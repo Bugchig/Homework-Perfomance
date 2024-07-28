@@ -1,0 +1,13 @@
+[t8]
+SnapshotXmlFile=snapshot_8.xml
+ContentType=text/html
+StepName=Custom Request: login.pl_3
+Total=1
+FileName1=t8.html
+RequestHeaderFile=t8_RequestHeader.txt
+ResponseHeaderFile=t8_ResponseHeader.txt
+RawStepEndTime=1719865690685
+RawStepName=
+RequestBodyFile=t8_RequestBody.txt
+RawStepStartTime=1719865690701
+URL1=http://localhost:1080/cgi-bin/login.pl?intro=true

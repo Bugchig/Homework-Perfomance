@@ -1,5 +1,5 @@
-GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1
-Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights
+GET /cgi-bin/welcome.pl?page=search HTTP/1.1
+Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
 sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
 sec-ch-ua-mobile: ?0
 sec-ch-ua-platform: "Windows"
@@ -14,5 +14,5 @@ Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1715601961; MTUserInfo=firstName&Jojo&address2&&username&jojo&hash&47&lastName&Bean%0A&address1&&creditCard&&expDate&%0A
+Cookie: MSO=SID&1719487169; MTUserInfo=firstName&Squire&address2&456789&username&squiretrelawney&hash&89&lastName&Trelawney%0A&address1&67%20Gold%20Doubloon%20Drive&creditCard&&expDate&%0A
 

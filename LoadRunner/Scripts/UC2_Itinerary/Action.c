@@ -66,6 +66,7 @@ Action()
 	
 	lr_end_transaction("home_page", LR_AUTO);
 
+	lr_think_time(40);
 
 	lr_start_transaction("login");
 
@@ -75,7 +76,7 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
-	lr_think_time(40);
+	
 
 	web_reg_find("Text=User password was correct",LAST);
 	

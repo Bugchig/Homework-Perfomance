@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IC:\Users\User\Documents\VuGen\Scripts\UC2_Search
+-IC:\Users\User\Documents\VuGen\Scripts\UC5_Search
 -IC:\Program Files (x86)\Micro Focus\LoadRunner\include
--ec:\users\user\documents\vugen\scripts\uc2_search\\logfile.log
-c:\users\user\documents\vugen\scripts\uc2_search\\combined_UC2_Search.c
-c:\users\user\documents\vugen\scripts\uc2_search\\pre_cci.c
+-ec:\users\user\documents\vugen\scripts\uc5_search\\logfile.log
+c:\users\user\documents\vugen\scripts\uc5_search\\combined_UC5_Search.c
+c:\users\user\documents\vugen\scripts\uc5_search\\pre_cci.c

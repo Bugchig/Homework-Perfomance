@@ -59,13 +59,14 @@ lr_start_transaction("home_page");
 		LAST);
 	
 	lr_end_transaction("home_page",LR_AUTO);
+	
+	lr_think_time(13);
 
 	lr_start_transaction("sign_up");
 
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
-	lr_think_time(13);
 
 	web_custom_request("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
@@ -78,13 +79,14 @@ lr_start_transaction("home_page");
 		LAST);
 
 	lr_end_transaction("sign_up",LR_AUTO);
+	
+	lr_think_time(59);
 
 	lr_start_transaction("customer_profile");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
 
-	lr_think_time(59);
 	web_reg_find("Text=Thank you, <b>{Login}{rnd}</b>, for registering and welcome to the Web Tours family.",
 		LAST);
 	
@@ -101,6 +103,55 @@ lr_start_transaction("home_page");
 		LAST);
 
 	lr_end_transaction("customer_profile",LR_AUTO);
+	
+	lr_start_transaction("continue");
+	
+	web_custom_request("welcome.pl_2", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/login.pl", 
+		"Snapshot=t5.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_custom_request("welcome.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/login.pl", 
+		"Snapshot=t6.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_concurrent_start(NULL);
+
+	web_custom_request("nav.pl_2", 
+		"URL=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Snapshot=t7.inf", 
+		"Mode=HTTP", 
+		LAST);
+
+	web_custom_request("login.pl_3", 
+		"URL=http://localhost:1080/cgi-bin/login.pl?intro=true", 
+		"Method=GET", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 
+		"Snapshot=t8.inf", 
+		"Mode=HTTP", 
+		LAST);
+	
+	web_concurrent_end(NULL);
+
+	lr_end_transaction("continue", LR_AUTO);
+	
 	lr_end_transaction("UC4_registering", LR_AUTO);
 
 

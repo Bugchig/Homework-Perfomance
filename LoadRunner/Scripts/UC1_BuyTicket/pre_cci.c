@@ -2766,13 +2766,26 @@ Action()
 		"LAST");
 
  
-	web_reg_save_param_attrib(
-		"ParamName=outboundFlight",
-		"TagName=input",
-		"Extract=value",
-		"Name=outboundFlight",
-		"Type=radio",
+
+	web_reg_save_param("outboundFlight",
+		"LB=name=\"outboundFlight\" value=\"",
+		"RB=\"",
+		"Ord=ALL",
 		"LAST");
+		
+		web_reg_save_param("outboundFlight",
+		"LB=name=\"outboundFlight\" value=\"",
+		"RB=\"",
+		"Ord=random",
+		"LAST");
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 
 	web_custom_request("reservations.pl_2", 
 		"URL=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -2784,6 +2797,8 @@ Action()
 		"Mode=HTTP", 
 		"Body=advanceDiscount=0&depart={depart}&departDate={departDate}&arrive={arrive}&returnDate={returnDate}&numPassengers=1&seatPref={seatPref}&seatType={seatType}&findFlights.x=24&findFlights.y=7&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref", 
 		"LAST");
+	
+	lr_save_string(lr_paramarr_random("outboundFlight"),"outboundFlightRandom");
 
 	web_convert_param("outboundFlight_URL2",
 		"SourceString={outboundFlight}",
@@ -2796,7 +2811,9 @@ Action()
 	lr_think_time(18);
 
 	lr_start_transaction("choice_flight");
-
+	
+	
+	
 	web_custom_request("reservations.pl_3",
 		"URL=http://localhost:1080/cgi-bin/reservations.pl",
 		"Method=POST",

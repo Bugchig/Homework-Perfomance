@@ -61,6 +61,7 @@ Action()
 	
 	lr_end_transaction("home_page", LR_AUTO);
 
+	lr_think_time(33);
 
 	lr_start_transaction("login");
 
@@ -70,7 +71,7 @@ Action()
 	web_add_auto_header("Sec-Fetch-User", 
 		"?1");
 
-	lr_think_time(33);
+
 	
 	web_reg_find("Text=User password was correct",LAST);
 
@@ -199,13 +200,13 @@ Action()
 	
 	
 	lr_end_transaction("itinerary",LR_AUTO);
+	
+	lr_think_time(55);
 
 	lr_start_transaction("delete");
 
 	web_add_header("Origin", 
 		"http://localhost:1080");
-
-	lr_think_time(55);
 	
 	
 	web_reg_find("Fail=Found",

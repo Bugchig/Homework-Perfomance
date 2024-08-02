@@ -1,0 +1,5158 @@
+﻿[General]
+TableCount=19
+
+[Table_0]
+FactTableName=Breakdown_meter
+DimensionCount=25
+
+[Breakdown_meter_Dim0]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Breakdown_map
+NumValues=2
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=2
+Dim_0=Page
+Dim_1=TEXT
+LikeMode=0
+
+[Breakdown_meter_Dim1]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Breakdown_map
+NumValues=37
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=37
+Dim_0=localh.../reservations.pl
+Dim_1=localh.../reservations.pl (main URL)
+Dim_2=localh...bin/itinerary.pl
+Dim_3=localh...bin/itinerary.pl (main URL)
+Dim_4=localh...cgi-bin/login.pl
+Dim_5=localh...cgi-bin/login.pl (main URL)
+Dim_6=localh...n/nav.pl?in=home
+Dim_7=localh...n/nav.pl?in=home (main URL)
+Dim_8=localhos....pl?intro=true
+Dim_9=localhos....pl?page=menus
+Dim_10=localhos....pl?page=menus (main URL)
+Dim_11=localhos...=&getInfo=true
+Dim_12=localhos...=&getInfo=true (main URL)
+Dim_13=localhos...e.pl?signOff=1
+Dim_14=localhos...e.pl?signOff=1 (main URL)
+Dim_15=localhos...e=menu&in=home
+Dim_16=localhos...enu&in=flights
+Dim_17=localhos...l?page=welcome
+Dim_18=localhos...l?signOff=true
+Dim_19=localhos...l?signOff=true (main URL)
+Dim_20=localhos...page=itinerary
+Dim_21=localhos...page=itinerary (main URL)
+Dim_22=localhos...pl?page=search
+Dim_23=localhos...pl?page=search (main URL)
+Dim_24=localhos...u&in=itinerary
+Dim_25=localhos...u&in=itinerary (main URL)
+Dim_26=web_concurrent_end_Action_105
+Dim_27=web_concurrent_end_Action_106
+Dim_28=web_concurrent_end_Action_107
+Dim_29=web_concurrent_end_Action_111
+Dim_30=web_concurrent_end_Action_116
+Dim_31=web_concurrent_end_Action_147
+Dim_32=web_concurrent_end_Action_149
+Dim_33=web_concurrent_end_Action_150
+Dim_34=web_concurrent_end_Action_151
+Dim_35=web_concurrent_end_Action_156
+Dim_36=web_concurrent_end_Action_245
+LikeMode=0
+
+[Breakdown_meter_Dim2]
+InternalDimName=Connection
+Dimension=Connection
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.016000
+
+[Breakdown_meter_Dim3]
+InternalDimName=Value
+Dimension=Value
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=37
+DimensionType=RelatedContinuous
+BaseDimension=Event Name
+DimCount=111
+Dim_0=0.030552
+Dim_1=0.162598
+Dim_2=localh.../reservations.pl
+Dim_3=0.030552
+Dim_4=0.162764
+Dim_5=localh.../reservations.pl (main URL)
+Dim_6=0.031229
+Dim_7=0.330193
+Dim_8=localh...bin/itinerary.pl
+Dim_9=0.031229
+Dim_10=0.277647
+Dim_11=localh...bin/itinerary.pl (main URL)
+Dim_12=0.021925
+Dim_13=0.197530
+Dim_14=localh...cgi-bin/login.pl
+Dim_15=0.021925
+Dim_16=0.197618
+Dim_17=localh...cgi-bin/login.pl (main URL)
+Dim_18=0.044515
+Dim_19=0.262368
+Dim_20=localh...n/nav.pl?in=home
+Dim_21=0.044590
+Dim_22=0.262488
+Dim_23=localh...n/nav.pl?in=home (main URL)
+Dim_24=0.000000
+Dim_25=0.173896
+Dim_26=localhos....pl?intro=true
+Dim_27=0.000063
+Dim_28=0.175689
+Dim_29=localhos....pl?page=menus
+Dim_30=0.000066
+Dim_31=0.175789
+Dim_32=localhos....pl?page=menus (main URL)
+Dim_33=0.030921
+Dim_34=0.138952
+Dim_35=localhos...=&getInfo=true
+Dim_36=0.030921
+Dim_37=0.139104
+Dim_38=localhos...=&getInfo=true (main URL)
+Dim_39=0.022623
+Dim_40=0.166542
+Dim_41=localhos...e.pl?signOff=1
+Dim_42=0.022623
+Dim_43=0.166542
+Dim_44=localhos...e.pl?signOff=1 (main URL)
+Dim_45=0.021222
+Dim_46=0.178420
+Dim_47=localhos...e=menu&in=home
+Dim_48=0.021162
+Dim_49=0.098238
+Dim_50=localhos...enu&in=flights
+Dim_51=0.078058
+Dim_52=0.401918
+Dim_53=localhos...l?page=welcome
+Dim_54=0.022759
+Dim_55=0.298770
+Dim_56=localhos...l?signOff=true
+Dim_57=0.022759
+Dim_58=0.298916
+Dim_59=localhos...l?signOff=true (main URL)
+Dim_60=0.016641
+Dim_61=0.125194
+Dim_62=localhos...page=itinerary
+Dim_63=0.018238
+Dim_64=0.125347
+Dim_65=localhos...page=itinerary (main URL)
+Dim_66=0.015588
+Dim_67=0.126091
+Dim_68=localhos...pl?page=search
+Dim_69=0.015588
+Dim_70=0.126770
+Dim_71=localhos...pl?page=search (main URL)
+Dim_72=0.019850
+Dim_73=0.174890
+Dim_74=localhos...u&in=itinerary
+Dim_75=0.078106
+Dim_76=0.164338
+Dim_77=localhos...u&in=itinerary (main URL)
+Dim_78=0.079237
+Dim_79=0.147409
+Dim_80=web_concurrent_end_Action_105
+Dim_81=0.078104
+Dim_82=0.171504
+Dim_83=web_concurrent_end_Action_106
+Dim_84=0.073460
+Dim_85=0.149948
+Dim_86=web_concurrent_end_Action_107
+Dim_87=0.070181
+Dim_88=0.150091
+Dim_89=web_concurrent_end_Action_111
+Dim_90=0.078065
+Dim_91=0.174042
+Dim_92=web_concurrent_end_Action_116
+Dim_93=0.087999
+Dim_94=0.132208
+Dim_95=web_concurrent_end_Action_147
+Dim_96=0.078105
+Dim_97=0.402164
+Dim_98=web_concurrent_end_Action_149
+Dim_99=0.078058
+Dim_100=0.215974
+Dim_101=web_concurrent_end_Action_150
+Dim_102=0.023195
+Dim_103=0.178515
+Dim_104=web_concurrent_end_Action_151
+Dim_105=0.095716
+Dim_106=0.318181
+Dim_107=web_concurrent_end_Action_156
+Dim_108=0.097755
+Dim_109=0.330193
+Dim_110=web_concurrent_end_Action_245
+
+[Breakdown_meter_Dim4]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Breakdown_meter_Dim5]
+InternalDimName=Size
+Dimension=Size
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.798828
+Dim_1=727.498047
+
+[Breakdown_meter_Dim6]
+InternalDimName=DNS Resolution
+Dimension=DNS Resolution
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.004000
+
+[Breakdown_meter_Dim7]
+InternalDimName=SendSize
+Dimension=SendSize
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.589844
+Dim_1=28.703125
+
+[Breakdown_meter_Dim8]
+InternalDimName=First Buffer
+Dimension=First Buffer
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.430000
+
+[Breakdown_meter_Dim9]
+InternalDimName=SSL Handshaking
+Dimension=SSL Handshaking
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Breakdown_meter_Dim10]
+InternalDimName=Network
+Dimension=Network
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.016000
+
+[Breakdown_meter_Dim11]
+InternalDimName=Server
+Dimension=Server
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.430000
+
+[Breakdown_meter_Dim12]
+InternalDimName=Error
+Dimension=Error
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Breakdown_meter_Dim13]
+InternalDimName=Client
+Dimension=Client
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.016000
+
+[Breakdown_meter_Dim14]
+InternalDimName=Receive
+Dimension=Receive
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.206000
+
+[Breakdown_meter_Dim15]
+InternalDimName=FTP Authentication
+Dimension=FTP Authentication
+EqualFlag=1
+DimensionTableName=Breakdown_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Breakdown_meter_Dim16]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[Breakdown_meter_Dim17]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[Breakdown_meter_Dim18]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=117
+Dim_0=4
+Dim_1=5
+Dim_2=6
+Dim_3=7
+Dim_4=9
+Dim_5=10
+Dim_6=12
+Dim_7=13
+Dim_8=15
+Dim_9=16
+Dim_10=17
+Dim_11=18
+Dim_12=19
+Dim_13=22
+Dim_14=23
+Dim_15=24
+Dim_16=25
+Dim_17=27
+Dim_18=28
+Dim_19=29
+Dim_20=30
+Dim_21=31
+Dim_22=33
+Dim_23=34
+Dim_24=35
+Dim_25=36
+Dim_26=37
+Dim_27=39
+Dim_28=40
+Dim_29=42
+Dim_30=43
+Dim_31=45
+Dim_32=46
+Dim_33=47
+Dim_34=48
+Dim_35=49
+Dim_36=52
+Dim_37=53
+Dim_38=54
+Dim_39=55
+Dim_40=57
+Dim_41=58
+Dim_42=59
+Dim_43=60
+Dim_44=61
+Dim_45=63
+Dim_46=64
+Dim_47=65
+Dim_48=66
+Dim_49=67
+Dim_50=69
+Dim_51=70
+Dim_52=72
+Dim_53=73
+Dim_54=75
+Dim_55=76
+Dim_56=78
+Dim_57=79
+Dim_58=80
+Dim_59=81
+Dim_60=84
+Dim_61=85
+Dim_62=86
+Dim_63=87
+Dim_64=89
+Dim_65=90
+Dim_66=91
+Dim_67=92
+Dim_68=93
+Dim_69=95
+Dim_70=96
+Dim_71=97
+Dim_72=98
+Dim_73=99
+Dim_74=101
+Dim_75=102
+Dim_76=103
+Dim_77=104
+Dim_78=107
+Dim_79=108
+Dim_80=109
+Dim_81=110
+Dim_82=112
+Dim_83=113
+Dim_84=114
+Dim_85=115
+Dim_86=116
+Dim_87=118
+Dim_88=119
+Dim_89=120
+Dim_90=121
+Dim_91=122
+Dim_92=124
+Dim_93=125
+Dim_94=126
+Dim_95=127
+Dim_96=130
+Dim_97=131
+Dim_98=132
+Dim_99=133
+Dim_100=135
+Dim_101=136
+Dim_102=137
+Dim_103=138
+Dim_104=139
+Dim_105=141
+Dim_106=142
+Dim_107=143
+Dim_108=144
+Dim_109=145
+Dim_110=146
+Dim_111=148
+Dim_112=149
+Dim_113=151
+Dim_114=152
+Dim_115=153
+Dim_116=154
+AsParent=1
+BasedOnTableName=
+
+[Breakdown_meter_Dim19]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Breakdown_meter_Dim20]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Breakdown_meter_Dim21]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[Breakdown_meter_Dim22]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[Breakdown_meter_Dim23]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Breakdown_meter_Dim24]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_1]
+FactTableName=DataPoint_meter
+DimensionCount=11
+
+[DataPoint_meter_Dim0]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=DataPoint_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[DataPoint_meter_Dim1]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[DataPoint_meter_Dim2]
+InternalDimName=Value
+Dimension=Value
+EqualFlag=1
+DimensionTableName=DataPoint_meter
+NumValues=3
+DimensionType=RelatedContinuous
+BaseDimension=Event Name
+DimCount=9
+Dim_0=1.000000
+Dim_1=4.000000
+Dim_2=Connection Shutdowns
+Dim_3=-2.000000
+Dim_4=2.000000
+Dim_5=Connections
+Dim_6=1.000000
+Dim_7=2.000000
+Dim_8=New Connections
+
+[DataPoint_meter_Dim3]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[DataPoint_meter_Dim4]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[DataPoint_meter_Dim5]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[DataPoint_meter_Dim6]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[DataPoint_meter_Dim7]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[DataPoint_meter_Dim8]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[DataPoint_meter_Dim9]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[DataPoint_meter_Dim10]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_2]
+FactTableName=Diagnostic_meter
+DimensionCount=7
+
+[Diagnostic_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[Diagnostic_meter_Dim1]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Diagnostic_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Diagnostic_meter_Dim2]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[Diagnostic_meter_Dim3]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[Diagnostic_meter_Dim4]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[Diagnostic_meter_Dim5]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[Diagnostic_meter_Dim6]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Table_3]
+FactTableName=Error_meter
+DimensionCount=14
+
+[Error_meter_Dim0]
+InternalDimName=Father ID
+Dimension=Father ID
+EqualFlag=1
+DimensionTableName=Error_meter
+NumValues=3
+DimensionType=DiscreteNumber
+UseEscapeSequence=1
+DimCount=3
+Dim_0=19
+Dim_1=25
+Dim_2=37
+LikeMode=0
+
+[Error_meter_Dim1]
+InternalDimName=Line Number
+Dimension=Line Number
+EqualFlag=1
+DimensionTableName=Error_meter
+NumValues=5
+DimensionType=DiscreteNumber
+UseEscapeSequence=1
+DimCount=5
+Dim_0=74
+Dim_1=83
+Dim_2=107
+Dim_3=117
+Dim_4=219
+LikeMode=0
+
+[Error_meter_Dim2]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Error_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Error_meter_Dim3]
+InternalDimName=Error Message
+Dimension=Error Message
+EqualFlag=1
+DimensionTableName=ErrorMessage
+NumValues=7
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=7
+Dim_0=Action.c(117) Error -26366 "Text=User has returned to the search page" not found for web_reg_find
+Dim_1=Action.c(117) Error -26612 HTTP Status-Code=500 (Internal Server Error) for "http//localhost1080/cgi-bin/welcome.pl?page=search"
+Dim_2=Action.c(219) Error -26368 "Text=3296866709-7781-BI" found for web_reg_find (count=1)
+Dim_3=Action.c(219) Error -26368 "Text=329691487-781-BI" found for web_reg_find (count=1)
+Dim_4=Action.c(74) Error -26366 "Text=User password was correct" not found for web_reg_find
+Dim_5=Action.c(83) Error -26366 "Text=User password was correct" not found for web_reg_find
+Dim_6=Action.c(87) Error -26612 HTTP Status-Code=500 (Internal Server Error) for "http//localhost1080/cgi-bin/login.pl?intro=true"   [issued at Action.c(107)]
+LikeMode=0
+
+[Error_meter_Dim4]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[Error_meter_Dim5]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[Error_meter_Dim6]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[Error_meter_Dim7]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[Error_meter_Dim8]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Error_meter_Dim9]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Error_meter_Dim10]
+InternalDimName=Action Name
+Dimension=Action Name
+EqualFlag=1
+DimensionTableName=ScriptActions
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=Action
+LikeMode=0
+
+[Error_meter_Dim11]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[Error_meter_Dim12]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Error_meter_Dim13]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_4]
+FactTableName=Event_meter
+DimensionCount=13
+
+[Event_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[Event_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[Event_meter_Dim2]
+InternalDimName=Value
+Dimension=Value
+EqualFlag=1
+DimensionTableName=Event_meter
+NumValues=21
+DimensionType=RelatedContinuous
+BaseDimension=Event Name
+DimCount=63
+Dim_0=2.169652
+Dim_1=14.103809
+Dim_2=Action_Transaction
+Dim_3=0.030164
+Dim_4=0.178216
+Dim_5=choice_flight
+Dim_6=0.139651
+Dim_7=0.513624
+Dim_8=continue
+Dim_9=0.022857
+Dim_10=0.185375
+Dim_11=customer_profile
+Dim_12=0.031203
+Dim_13=0.287727
+Dim_14=delete
+Dim_15=0.030610
+Dim_16=0.316913
+Dim_17=find_flight
+Dim_18=0.000419
+Dim_19=0.502782
+Dim_20=flights
+Dim_21=0.069395
+Dim_22=0.562420
+Dim_23=home_page
+Dim_24=0.127575
+Dim_25=0.588402
+Dim_26=itinerary
+Dim_27=0.038868
+Dim_28=0.558418
+Dim_29=login
+Dim_30=0.069280
+Dim_31=2.300509
+Dim_32=logout
+Dim_33=0.029945
+Dim_34=0.197076
+Dim_35=payment
+Dim_36=0.023076
+Dim_37=0.140037
+Dim_38=sign_up
+Dim_39=4.304804
+Dim_40=14.103757
+Dim_41=UC1_BuyTicket
+Dim_42=2.215318
+Dim_43=7.287342
+Dim_44=UC2_Itinerary
+Dim_45=6.514450
+Dim_46=7.014264
+Dim_47=UC3_Login_Logout
+Dim_48=4.441440
+Dim_49=5.007346
+Dim_50=UC4_registering
+Dim_51=2.169652
+Dim_52=11.299343
+Dim_53=UC5_Search
+Dim_54=6.747847
+Dim_55=11.528637
+Dim_56=UC6_Delete_Ticket
+Dim_57=0.000000
+Dim_58=0.000000
+Dim_59=vuser_end_Transaction
+Dim_60=0.000000
+Dim_61=0.001163
+Dim_62=vuser_init_Transaction
+
+[Event_meter_Dim3]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Event_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Event_meter_Dim4]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[Event_meter_Dim5]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[Event_meter_Dim6]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=39
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=8
+Dim_5=11
+Dim_6=14
+Dim_7=20
+Dim_8=21
+Dim_9=26
+Dim_10=32
+Dim_11=38
+Dim_12=41
+Dim_13=44
+Dim_14=50
+Dim_15=51
+Dim_16=56
+Dim_17=62
+Dim_18=68
+Dim_19=71
+Dim_20=74
+Dim_21=77
+Dim_22=82
+Dim_23=83
+Dim_24=88
+Dim_25=94
+Dim_26=100
+Dim_27=105
+Dim_28=106
+Dim_29=111
+Dim_30=117
+Dim_31=123
+Dim_32=128
+Dim_33=129
+Dim_34=134
+Dim_35=140
+Dim_36=147
+Dim_37=150
+Dim_38=155
+AsParent=1
+BasedOnTableName=
+
+[Event_meter_Dim7]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Event_meter_Dim8]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Event_meter_Dim9]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[Event_meter_Dim10]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[Event_meter_Dim11]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Event_meter_Dim12]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_5]
+FactTableName=J2EETBD_meter
+DimensionCount=7
+
+[J2EETBD_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[J2EETBD_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[J2EETBD_meter_Dim2]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=J2EETBD_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[J2EETBD_meter_Dim3]
+InternalDimName=Num Exception
+Dimension=Num Exception
+EqualFlag=1
+DimensionTableName=J2EETBD_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[J2EETBD_meter_Dim4]
+InternalDimName=Num Timeout
+Dimension=Num Timeout
+EqualFlag=1
+DimensionTableName=J2EETBD_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[J2EETBD_meter_Dim5]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[J2EETBD_meter_Dim6]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[Table_6]
+FactTableName=J2EETBD_Net_meter
+DimensionCount=6
+
+[J2EETBD_Net_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[J2EETBD_Net_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[J2EETBD_Net_meter_Dim2]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=J2EETBD_Net_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[J2EETBD_Net_meter_Dim3]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[J2EETBD_Net_meter_Dim4]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[J2EETBD_Net_meter_Dim5]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[Table_7]
+FactTableName=Monitor_meter
+DimensionCount=9
+
+[Monitor_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[Monitor_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[Monitor_meter_Dim2]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[Monitor_meter_Dim3]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[Monitor_meter_Dim4]
+InternalDimName=Father ID
+Dimension=Father ID
+EqualFlag=1
+DimensionTableName=Monitor_meter
+NumValues=1
+DimensionType=DiscreteNumber
+UseEscapeSequence=1
+DimCount=1
+Dim_0=-1
+LikeMode=0
+
+[Monitor_meter_Dim5]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Monitor_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Monitor_meter_Dim6]
+InternalDimName=Value
+Dimension=Value
+EqualFlag=1
+DimensionTableName=Monitor_meter
+NumValues=17
+DimensionType=RelatedContinuous
+BaseDimension=Event Name
+DimCount=51
+Dim_0=0.070000
+Dim_1=427.618000
+Dim_2=% активности диска (Логический диск _Total)
+Dim_3=0.000000
+Dim_4=17.108000
+Dim_5=% времени C1 (Процессор _Total)
+Dim_6=0.302000
+Dim_7=12.469000
+Dim_8=% времени C2 (Процессор _Total)
+Dim_9=0.037000
+Dim_10=95.494000
+Dim_11=% времени C3 (Процессор _Total)
+Dim_12=0.000000
+Dim_13=5.741000
+Dim_14=% времени DPC (Процессор _Total)
+Dim_15=0.000000
+Dim_16=3.260000
+Dim_17=% времени прерываний (Процессор _Total)
+Dim_18=1.878000
+Dim_19=89.749000
+Dim_20=% загруженности процессора (Процессор _Total)
+Dim_21=75.038000
+Dim_22=82.236000
+Dim_23=% использования выделенной памяти (Память)
+Dim_24=0.909000
+Dim_25=68.772000
+Dim_26=% работы в пользовательском режиме (Процессор _Total)
+Dim_27=0.519000
+Dim_28=28.591000
+Dim_29=% работы в привилегированном режиме (Процессор _Total)
+Dim_30=0.000000
+Dim_31=9590.552000
+Dim_32=C1 переходов/сек (Процессор _Total)
+Dim_33=4.312000
+Dim_34=4470.771000
+Dim_35=C2 переходов/сек (Процессор _Total)
+Dim_36=3.322000
+Dim_37=19381.338000
+Dim_38=C3 переходов/сек (Процессор _Total)
+Dim_39=180.721000
+Dim_40=8561.263000
+Dim_41=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_42=1451.693000
+Dim_43=48848.132000
+Dim_44=Прерываний/с (Процессор _Total)
+Dim_45=9.365000
+Dim_46=96.403000
+Dim_47=Процент времени бездействия (Процессор _Total)
+Dim_48=0.000000
+Dim_49=200.000000
+Dim_50=Скорость DPC (Процессор _Total)
+
+[Monitor_meter_Dim7]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Monitor_meter_Dim8]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[Table_8]
+FactTableName=Sap_osm_meter
+DimensionCount=6
+
+[Sap_osm_meter_Dim0]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Sap_osm_meter_Dim1]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Sap_osm_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Sap_osm_meter_Dim2]
+InternalDimName=PageOutKB
+Dimension=PageOutKB
+EqualFlag=1
+DimensionTableName=Sap_osm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_osm_meter_Dim3]
+InternalDimName=PageInKB
+Dimension=PageInKB
+EqualFlag=1
+DimensionTableName=Sap_osm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_osm_meter_Dim4]
+InternalDimName=Disks
+Dimension=Disks
+EqualFlag=1
+DimensionTableName=Sap_osm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_osm_meter_Dim5]
+InternalDimName=CPU
+Dimension=CPU
+EqualFlag=1
+DimensionTableName=Sap_osm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Table_9]
+FactTableName=Sap_sr_meter
+DimensionCount=34
+
+[Sap_sr_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[Sap_sr_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[Sap_sr_meter_Dim2]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[Sap_sr_meter_Dim3]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[Sap_sr_meter_Dim4]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[Sap_sr_meter_Dim5]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Sap_sr_meter_Dim6]
+InternalDimName=Roll In Time
+Dimension=Roll In Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim7]
+InternalDimName=Output Len
+Dimension=Output Len
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim8]
+InternalDimName=Input Len
+Dimension=Input Len
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim9]
+InternalDimName=Queue Time
+Dimension=Queue Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim10]
+InternalDimName=Cpu Time
+Dimension=Cpu Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim11]
+InternalDimName=Resp Time
+Dimension=Resp Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim12]
+InternalDimName=Lock Time
+Dimension=Lock Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim13]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Sap_sr_meter_Dim14]
+InternalDimName=Database Time
+Dimension=Database Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim15]
+InternalDimName=Start Time
+Dimension=Start Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim16]
+InternalDimName=Rfc Time
+Dimension=Rfc Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim17]
+InternalDimName=Network Time
+Dimension=Network Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim18]
+InternalDimName=End-User Time
+Dimension=End-User Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim19]
+InternalDimName=GuiNet Time
+Dimension=GuiNet Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim20]
+InternalDimName=Roll Out Time
+Dimension=Roll Out Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim21]
+InternalDimName=Roll Wait Time
+Dimension=Roll Wait Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim22]
+InternalDimName=Cuaload Time
+Dimension=Cuaload Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim23]
+InternalDimName=Dynpload Time
+Dimension=Dynpload Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim24]
+InternalDimName=Repload Time
+Dimension=Repload Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim25]
+InternalDimName=Generate Time
+Dimension=Generate Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim26]
+InternalDimName=Commit Time
+Dimension=Commit Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim27]
+InternalDimName=DB Time to Record
+Dimension=DB Time to Record
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim28]
+InternalDimName=Database Records
+Dimension=Database Records
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim29]
+InternalDimName=Gui Time
+Dimension=Gui Time
+EqualFlag=1
+DimensionTableName=Sap_sr_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_sr_meter_Dim30]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Sap_sr_meter_Dim31]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[Sap_sr_meter_Dim32]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Sap_sr_meter_Dim33]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_10]
+FactTableName=Sap_wpm_meter
+DimensionCount=8
+
+[Sap_wpm_meter_Dim0]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[Sap_wpm_meter_Dim1]
+InternalDimName=StoppedOther
+Dimension=StoppedOther
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_wpm_meter_Dim2]
+InternalDimName=StoppedPRIV
+Dimension=StoppedPRIV
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_wpm_meter_Dim3]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[Sap_wpm_meter_Dim4]
+InternalDimName=Ended
+Dimension=Ended
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_wpm_meter_Dim5]
+InternalDimName=StoppedCPIC
+Dimension=StoppedCPIC
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_wpm_meter_Dim6]
+InternalDimName=Running
+Dimension=Running
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Sap_wpm_meter_Dim7]
+InternalDimName=Waiting
+Dimension=Waiting
+EqualFlag=1
+DimensionTableName=Sap_wpm_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[Table_11]
+FactTableName=SARM_meter
+DimensionCount=12
+
+[SARM_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[SARM_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[SARM_meter_Dim2]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[SARM_meter_Dim3]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[SARM_meter_Dim4]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[SARM_meter_Dim5]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[SARM_meter_Dim6]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=SARM_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[SARM_meter_Dim7]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[SARM_meter_Dim8]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[SARM_meter_Dim9]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[SARM_meter_Dim10]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[SARM_meter_Dim11]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_12]
+FactTableName=SARM_Net_meter
+DimensionCount=11
+
+[SARM_Net_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[SARM_Net_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[SARM_Net_meter_Dim2]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[SARM_Net_meter_Dim3]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[SARM_Net_meter_Dim4]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[SARM_Net_meter_Dim5]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[SARM_Net_meter_Dim6]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=SARM_Net_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[SARM_Net_meter_Dim7]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[SARM_Net_meter_Dim8]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[SARM_Net_meter_Dim9]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[SARM_Net_meter_Dim10]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_13]
+FactTableName=SQLBD_meter
+DimensionCount=12
+
+[SQLBD_meter_Dim0]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[SQLBD_meter_Dim1]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[SQLBD_meter_Dim2]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[SQLBD_meter_Dim3]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[SQLBD_meter_Dim4]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[SQLBD_meter_Dim5]
+InternalDimName=Other Time
+Dimension=Other Time
+EqualFlag=1
+DimensionTableName=SQLBD_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[SQLBD_meter_Dim6]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=SQLBD_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[SQLBD_meter_Dim7]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[SQLBD_meter_Dim8]
+InternalDimName=Prepare
+Dimension=Prepare
+EqualFlag=1
+DimensionTableName=SQLBD_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[SQLBD_meter_Dim9]
+InternalDimName=Execute
+Dimension=Execute
+EqualFlag=1
+DimensionTableName=SQLBD_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[SQLBD_meter_Dim10]
+InternalDimName=Initial Fetch
+Dimension=Initial Fetch
+EqualFlag=1
+DimensionTableName=SQLBD_meter
+NumValues=1
+DimensionType=ContinuousNumber
+DimCount=2
+Dim_0=0.000000
+Dim_1=0.000000
+
+[SQLBD_meter_Dim11]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[Table_14]
+FactTableName=TruClientBreakDown_meter
+DimensionCount=11
+
+[TruClientBreakDown_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim2]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim3]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim4]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[TruClientBreakDown_meter_Dim5]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim6]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim7]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim8]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=TruClientBreakDown_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[TruClientBreakDown_meter_Dim9]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[TruClientBreakDown_meter_Dim10]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_15]
+FactTableName=TruClientJsBreakdown_meter
+DimensionCount=11
+
+[TruClientJsBreakdown_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim2]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim3]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim4]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[TruClientJsBreakdown_meter_Dim5]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim6]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim7]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim8]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=TruClientJsBreakdown_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[TruClientJsBreakdown_meter_Dim9]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[TruClientJsBreakdown_meter_Dim10]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_16]
+FactTableName=URL_meter
+DimensionCount=10
+
+[URL_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[URL_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[URL_meter_Dim2]
+InternalDimName=Tree Path ID
+Dimension=Tree Path ID
+EqualFlag=1
+DimensionTableName=MsrsTreePath
+NumValues=0
+DimensionType=IdsDimension
+DimCount=156
+Dim_0=0
+Dim_1=1
+Dim_2=2
+Dim_3=3
+Dim_4=4
+Dim_5=5
+Dim_6=6
+Dim_7=7
+Dim_8=8
+Dim_9=9
+Dim_10=10
+Dim_11=11
+Dim_12=12
+Dim_13=13
+Dim_14=14
+Dim_15=15
+Dim_16=16
+Dim_17=17
+Dim_18=18
+Dim_19=19
+Dim_20=20
+Dim_21=21
+Dim_22=22
+Dim_23=23
+Dim_24=24
+Dim_25=25
+Dim_26=26
+Dim_27=27
+Dim_28=28
+Dim_29=29
+Dim_30=30
+Dim_31=31
+Dim_32=32
+Dim_33=33
+Dim_34=34
+Dim_35=35
+Dim_36=36
+Dim_37=37
+Dim_38=38
+Dim_39=39
+Dim_40=40
+Dim_41=41
+Dim_42=42
+Dim_43=43
+Dim_44=44
+Dim_45=45
+Dim_46=46
+Dim_47=47
+Dim_48=48
+Dim_49=49
+Dim_50=50
+Dim_51=51
+Dim_52=52
+Dim_53=53
+Dim_54=54
+Dim_55=55
+Dim_56=56
+Dim_57=57
+Dim_58=58
+Dim_59=59
+Dim_60=60
+Dim_61=61
+Dim_62=62
+Dim_63=63
+Dim_64=64
+Dim_65=65
+Dim_66=66
+Dim_67=67
+Dim_68=68
+Dim_69=69
+Dim_70=70
+Dim_71=71
+Dim_72=72
+Dim_73=73
+Dim_74=74
+Dim_75=75
+Dim_76=76
+Dim_77=77
+Dim_78=78
+Dim_79=79
+Dim_80=80
+Dim_81=81
+Dim_82=82
+Dim_83=83
+Dim_84=84
+Dim_85=85
+Dim_86=86
+Dim_87=87
+Dim_88=88
+Dim_89=89
+Dim_90=90
+Dim_91=91
+Dim_92=92
+Dim_93=93
+Dim_94=94
+Dim_95=95
+Dim_96=96
+Dim_97=97
+Dim_98=98
+Dim_99=99
+Dim_100=100
+Dim_101=101
+Dim_102=102
+Dim_103=103
+Dim_104=104
+Dim_105=105
+Dim_106=106
+Dim_107=107
+Dim_108=108
+Dim_109=109
+Dim_110=110
+Dim_111=111
+Dim_112=112
+Dim_113=113
+Dim_114=114
+Dim_115=115
+Dim_116=116
+Dim_117=117
+Dim_118=118
+Dim_119=119
+Dim_120=120
+Dim_121=121
+Dim_122=122
+Dim_123=123
+Dim_124=124
+Dim_125=125
+Dim_126=126
+Dim_127=127
+Dim_128=128
+Dim_129=129
+Dim_130=130
+Dim_131=131
+Dim_132=132
+Dim_133=133
+Dim_134=134
+Dim_135=135
+Dim_136=136
+Dim_137=137
+Dim_138=138
+Dim_139=139
+Dim_140=140
+Dim_141=141
+Dim_142=142
+Dim_143=143
+Dim_144=144
+Dim_145=145
+Dim_146=146
+Dim_147=147
+Dim_148=148
+Dim_149=149
+Dim_150=150
+Dim_151=151
+Dim_152=152
+Dim_153=153
+Dim_154=154
+Dim_155=155
+AsParent=1
+BasedOnTableName=
+
+[URL_meter_Dim3]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[URL_meter_Dim4]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[URL_meter_Dim5]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[URL_meter_Dim6]
+InternalDimName=Transaction End Status
+Dimension=Transaction End Status
+EqualFlag=1
+DimensionTableName=TransactionEndStatus
+NumValues=3
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=3
+Dim_0=Fail
+Dim_1=Pass
+Dim_2=Stop
+LikeMode=0
+
+[URL_meter_Dim7]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=URL_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[URL_meter_Dim8]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[URL_meter_Dim9]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[Table_17]
+FactTableName=VuserEvent_meter
+DimensionCount=10
+
+[VuserEvent_meter_Dim0]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[VuserEvent_meter_Dim1]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[VuserEvent_meter_Dim2]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[VuserEvent_meter_Dim3]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[VuserEvent_meter_Dim4]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[VuserEvent_meter_Dim5]
+InternalDimName=Vuser End Status Name
+Dimension=Vuser End Status Name
+EqualFlag=1
+DimensionTableName=VuserEndStatus
+NumValues=4
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=4
+Dim_0=Error
+Dim_1=Failed
+Dim_2=Passed
+Dim_3=Stopped
+LikeMode=0
+
+[VuserEvent_meter_Dim6]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=VuserEvent_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[VuserEvent_meter_Dim7]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[VuserEvent_meter_Dim8]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[VuserEvent_meter_Dim9]
+InternalDimName=Vuser Status Name
+Dimension=Vuser Status Name
+EqualFlag=1
+DimensionTableName=VuserStatus
+NumValues=5
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=5
+Dim_0=Load
+Dim_1=Pause
+Dim_2=Quit
+Dim_3=Ready
+Dim_4=Run
+LikeMode=0
+
+[Table_18]
+FactTableName=WebEvent_meter
+DimensionCount=11
+
+[WebEvent_meter_Dim0]
+InternalDimName=Event Name
+Dimension=Event Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=48
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=48
+Dim_0=% активности диска (Логический диск _Total)
+Dim_1=% времени C1 (Процессор _Total)
+Dim_2=% времени C2 (Процессор _Total)
+Dim_3=% времени C3 (Процессор _Total)
+Dim_4=% времени DPC (Процессор _Total)
+Dim_5=% времени прерываний (Процессор _Total)
+Dim_6=% загруженности процессора (Процессор _Total)
+Dim_7=% использования выделенной памяти (Память)
+Dim_8=% работы в пользовательском режиме (Процессор _Total)
+Dim_9=% работы в привилегированном режиме (Процессор _Total)
+Dim_10=Action_Transaction
+Dim_11=C1 переходов/сек (Процессор _Total)
+Dim_12=C2 переходов/сек (Процессор _Total)
+Dim_13=C3 переходов/сек (Процессор _Total)
+Dim_14=choice_flight
+Dim_15=Connection Shutdowns
+Dim_16=Connections
+Dim_17=continue
+Dim_18=customer_profile
+Dim_19=delete
+Dim_20=Error -26366
+Dim_21=Error -26368
+Dim_22=Error -26612
+Dim_23=find_flight
+Dim_24=flights
+Dim_25=Hits
+Dim_26=home_page
+Dim_27=HTTP_200
+Dim_28=HTTP_500
+Dim_29=itinerary
+Dim_30=login
+Dim_31=logout
+Dim_32=New Connections
+Dim_33=payment
+Dim_34=sign_up
+Dim_35=Throughput
+Dim_36=UC1_BuyTicket
+Dim_37=UC2_Itinerary
+Dim_38=UC3_Login_Logout
+Dim_39=UC4_registering
+Dim_40=UC5_Search
+Dim_41=UC6_Delete_Ticket
+Dim_42=vuser_end_Transaction
+Dim_43=vuser_init_Transaction
+Dim_44=Поставлено в очередь DPC/сек (Процессор _Total)
+Dim_45=Прерываний/с (Процессор _Total)
+Dim_46=Процент времени бездействия (Процессор _Total)
+Dim_47=Скорость DPC (Процессор _Total)
+LikeMode=0
+
+[WebEvent_meter_Dim1]
+InternalDimName=Event Type
+Dimension=Event Type
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=Connections
+Dim_1=Connections per Second
+Dim_2=Error
+Dim_3=Server Resources
+Dim_4=Transaction
+Dim_5=Web
+LikeMode=0
+
+[WebEvent_meter_Dim2]
+InternalDimName=Host Location
+Dimension=Host Location
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=None
+LikeMode=0
+
+[WebEvent_meter_Dim3]
+InternalDimName=Host Name
+Dimension=Host Name
+EqualFlag=1
+DimensionTableName=Host
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=localhost
+LikeMode=0
+
+[WebEvent_meter_Dim4]
+InternalDimName=Result Name
+Dimension=Result Name
+EqualFlag=1
+DimensionTableName=Result
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=res.lrr
+LikeMode=0
+
+[WebEvent_meter_Dim5]
+InternalDimName=Script Name
+Dimension=Script Name
+EqualFlag=1
+DimensionTableName=Script
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[WebEvent_meter_Dim6]
+InternalDimName=Location name
+Dimension=Location name
+EqualFlag=1
+DimensionTableName=Shunra_Location
+NumValues=1
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=1
+Dim_0=00000000-0000-0000-0000-000000000000
+LikeMode=0
+
+[WebEvent_meter_Dim7]
+InternalDimName=Group Name
+Dimension=Group Name
+EqualFlag=1
+DimensionTableName=VuserGroup
+NumValues=6
+DimensionType=Discrete
+UseEscapeSequence=1
+DimCount=6
+Dim_0=UC1_BuyTicket
+Dim_1=UC2_Itinerary
+Dim_2=UC3_Login_Logout
+Dim_3=UC4_registering
+Dim_4=UC5_Search
+Dim_5=UC6_DeleteTicket
+LikeMode=0
+
+[WebEvent_meter_Dim8]
+InternalDimName=VuserID
+Dimension=VuserID
+EqualFlag=1
+DimensionTableName=VuserId
+NumValues=2
+DimensionType=Sequential
+UseEscapeSequence=1
+DimCount=2
+Dim_0=1 - 10
+Dim_1=Dummy2
+LikeMode=0
+
+[WebEvent_meter_Dim9]
+InternalDimName=End Time
+Dimension=End Time
+EqualFlag=1
+DimensionTableName=WebEvent_meter
+NumValues=1
+DimensionType=Continuous
+DimCount=2
+Dim_0=0.000000
+Dim_1=6686.000000
+
+[WebEvent_meter_Dim10]
+InternalDimName=Value
+Dimension=Value
+EqualFlag=1
+DimensionTableName=WebEvent_meter
+NumValues=3
+DimensionType=RelatedContinuous
+BaseDimension=Event Name
+DimCount=9
+Dim_0=5.000000
+Dim_1=34.000000
+Dim_2=HTTP_200
+Dim_3=1.000000
+Dim_4=1.000000
+Dim_5=HTTP_500
+Dim_6=11400.000000
+Dim_7=2147973.000000
+Dim_8=Throughput
+
